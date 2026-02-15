@@ -18,13 +18,14 @@ namespace ContactManager.Web.Config
         /// </summary>
         /// <param name="services">Service collection</param>
         /// <param name="configuration">Application configuration</param>
-        public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
+        /// <param name="environment">Web hosting environment</param>
+        public static void ConfigureServices(IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
         {
             // Configure MVC with validation
             ConfigureMvc(services);
             
-            // Configure database
-            DatabaseConfiguration.ConfigureDatabase(services, configuration);
+            // Configure database based on environment (SQLite for Development, SQL Server for Production)
+            DatabaseConfiguration.ConfigureDatabase(services, configuration, environment);
             
             // Configure business services
             ConfigureBusinessServices(services);

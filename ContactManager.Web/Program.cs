@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 LoggingConfiguration.ConfigureLogging(builder);
 
 // Configure all services using centralized configuration
-ApplicationConfiguration.ConfigureServices(builder.Services, builder.Configuration);
+ApplicationConfiguration.ConfigureServices(builder.Services, builder.Configuration, builder.Environment);
 
 // Add WebSocket support
 builder.AddWebSocketSupport();

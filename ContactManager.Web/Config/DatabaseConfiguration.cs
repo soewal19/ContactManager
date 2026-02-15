@@ -12,38 +12,80 @@ namespace ContactManager.Web.Config
     public static class DatabaseConfiguration
     {
         /// <summary>
-        /// Configures database context based on connection string
-        /// Supports both SQLite and SQL Server with automatic detection
+        /// Configures database context based on environment and connection string
+        /// Supports explicit provider selection via DATABASE_PROVIDER environment variable
+        /// Auto-detects provider based on connection string format
+        /// Defaults to SQLite for Development environment
         /// </summary>
         /// <param name="services">Service collection</param>
         /// <param name="configuration">Application configuration</param>
-        public static void ConfigureDatabase(IServiceCollection services, IConfiguration configuration)
+        /// <param name="environment">Web hosting environment</param>
+        public static void ConfigureDatabase(IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
         {
             services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =>
             {
-                var connectionString = configuration.GetConnectionString("DefaultConnection");
                 var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
                 var logger = loggerFactory.CreateLogger<ApplicationDbContext>();
                 
-                if (string.IsNullOrWhiteSpace(connectionString))
+                // Check for explicit provider selection via environment variable
+                var provider = configuration["DATABASE_PROVIDER"]?.ToLowerInvariant();
+                
+                // If no explicit provider, check environment
+                if (string.IsNullOrEmpty(provider))
                 {
-                    throw new InvalidOperationException("DefaultConnection connection string is not configured. Please check your appsettings.json file.");
-                }
-
-                // Auto-detect database type based on connection string
-                if (IsSqliteConnection(connectionString))
-                {
-                    logger.LogInformation("Configuring SQLite database");
-                    ConfigureSqlite(options, connectionString);
-                }
-                else if (IsSqlServerConnection(connectionString))
-                {
-                    logger.LogInformation("Configuring SQL Server database");
-                    ConfigureSqlServer(options, connectionString);
+                    // Default to SQLite for Development, SQL Server for Production
+                    provider = environment.IsDevelopment() ? "sqlite" : "sqlserver";
+                    logger.LogInformation($"Auto-selected database provider for {environment.EnvironmentName} environment: {provider}");
                 }
                 else
                 {
-                    throw new InvalidOperationException($"Unsupported database connection string format. Connection string: {connectionString}");
+                    logger.LogInformation($"Using explicitly configured database provider: {provider}");
+                }
+
+                // Get appropriate connection string
+                var connectionStringName = provider == "sqlite" ? "SQLiteConnection" : "SqlServerConnection";
+                var connectionString = configuration.GetConnectionString(connectionStringName);
+                
+                // Fallback to DefaultConnection if specific one not found
+                if (string.IsNullOrWhiteSpace(connectionString))
+                {
+                    connectionString = configuration.GetConnectionString("DefaultConnection");
+                }
+                
+                if (string.IsNullOrWhiteSpace(connectionString))
+                {
+                    throw new InvalidOperationException($"Connection string not found for provider '{provider}'. Please check your appsettings.json and connection strings configuration.");
+                }
+
+                // Configure database based on provider
+                switch (provider)
+                {
+                    case "sqlite":
+                        logger.LogInformation("Configuring SQLite database for testing/development");
+                        ConfigureSqlite(options, connectionString);
+                        break;
+                    case "sqlserver":
+                    case "mssql":
+                        logger.LogInformation("Configuring SQL Server database for production");
+                        ConfigureSqlServer(options, connectionString);
+                        break;
+                    default:
+                        // Auto-detect based on connection string format
+                        if (IsSqliteConnection(connectionString))
+                        {
+                            logger.LogInformation("Auto-detected SQLite database from connection string");
+                            ConfigureSqlite(options, connectionString);
+                        }
+                        else if (IsSqlServerConnection(connectionString))
+                        {
+                            logger.LogInformation("Auto-detected SQL Server database from connection string");
+                            ConfigureSqlServer(options, connectionString);
+                        }
+                        else
+                        {
+                            throw new InvalidOperationException($"Unsupported database provider '{provider}' or unrecognized connection string format.");
+                        }
+                        break;
                 }
             });
         }
