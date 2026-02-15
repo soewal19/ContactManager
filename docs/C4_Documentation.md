@@ -71,7 +71,7 @@ C4Component
 Shows how the system is mapped to infrastructure.
 
 ```mermaid
-deploymentDiagram
+C4Deployment
     title Deployment Diagram - Dockerized Environment
     
     Node(client_comp, "Client Computer", "Web Browser") {
@@ -89,7 +89,7 @@ deploymentDiagram
     
     Rel(browser, app_exec, "HTTPS (Port 80/443)", "TCP/IP")
     Rel(app_exec, physical_db, "File System / Network", "EF Core")
-
+```
 ---
 
 **For a deeper dive into the code-level implementation, data flows, and component interactions, please refer to the [Detailed Design Documentation](Detailed_Design.md).**
