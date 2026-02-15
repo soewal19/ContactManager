@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Upload Test</title>
+</head>
+<body>
+    <h1>Test CSV Upload</h1>
+    <form action="http://localhost:5021/Contacts/Upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Upload CSV</button>
+    </form>
+    
+    <h2>Available Test Files:</h2>
+    <ul>
+        <li><a href="test_russian_dates.csv" download>test_russian_dates.csv (ISO format dates)</a></li>
+        <li><a href="test_russian_format.csv" download>test_russian_format.csv (Russian format dates)</a></li>
+        <li><a href="sample_contacts.csv" download>sample_contacts.csv (Original English)</a></li>
+    </ul>
+    
+    <h2>Expected CSV Format:</h2>
+    <pre>
+Name,DateOfBirth,Married,Phone,Salary
+Иван Иванов,1990-01-15,true,+71234567890,50000.00
+Мария Петрова,1985-03-20,false,+79876543210,65000.50
+    </pre>
+    
+    <p><strong>Supported date formats:</strong> yyyy-MM-dd, dd.MM.yyyy, MM/dd/yyyy, dd/MM/yyyy</p>
+    <p><strong>Supported married values:</strong> true/false, yes/no, да/нет, 1/0</p>
+</body>
+</html>

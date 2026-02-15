@@ -1,0 +1,220 @@
+@{
+    ViewData["Title"] = "API Documentation";
+    Layout = "_Layout";
+}
+
+<!-- API Documentation Content -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4 mb-4">
+                <i class="fas fa-code me-3 text-primary"></i>
+                API Documentation
+            </h1>
+            <p class="lead mb-4">
+                Welcome to the Contact Manager API documentation. Our RESTful API provides comprehensive endpoints for managing contacts.
+            </p>
+        </div>
+    </div>
+
+    <!-- API Access Options -->
+    <div class="row mb-4">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-book me-2"></i>
+                        Interactive API Documentation
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Explore and test our API endpoints interactively with Swagger UI.
+                    </p>
+                    <div class="d-grid gap-2">
+                        <a href="/swagger-api/" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt me-2"></i>
+                            Open Swagger UI (Working)
+                        </a>
+                        <button class="btn btn-outline-secondary" onclick="testSwaggerJSON()">
+                            <i class="fas fa-code me-2"></i>
+                            Test Swagger JSON
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-plug me-2"></i>
+                        API Endpoints
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><strong>GET</strong> /api/contacts</span>
+                            <span class="badge bg-primary rounded-pill">Get All Contacts</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><strong>GET</strong> /api/contacts/{id}</span>
+                            <span class="badge bg-info rounded-pill">Get Contact</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><strong>POST</strong> /api/contacts</span>
+                            <span class="badge bg-success rounded-pill">Create Contact</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><strong>PUT</strong> /api/contacts/{id}</span>
+                            <span class="badge bg-warning rounded-pill">Update Contact</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><strong>DELETE</strong> /api/contacts/{id}</span>
+                            <span class="badge bg-danger rounded-pill">Delete Contact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Test -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-flask me-2"></i>
+                        Quick API Test
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Test our API endpoints directly from this page:
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <button class="btn btn-outline-primary w-100" onclick="testAPI('/api/test')">
+                                <i class="fas fa-play me-2"></i>
+                                Test API Connection
+                            </button>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <button class="btn btn-outline-success w-100" onclick="testAPI('/api/test/123')">
+                                <i class="fas fa-play me-2"></i>
+                                Test with Parameter
+                            </button>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <button class="btn btn-outline-info w-100" onclick="testAPI('/swagger/v1/swagger.json')">
+                                <i class="fas fa-play me-2"></i>
+                                Test Swagger JSON
+                            </button>
+                        </div>
+                    </div>
+                    <div id="apiResult" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Authentication -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        Authentication & Security
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Our API uses standard HTTP authentication mechanisms. All endpoints are secured and require proper authorization.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>HTTPS encryption for all communications</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Input validation and sanitization</li>
+                        <li><i class="fas fa-check text-success me-2"></i>CORS configuration for cross-origin requests</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Rate limiting to prevent abuse</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function testAPI(endpoint) {
+            const resultDiv = document.getElementById('apiResult');
+            resultDiv.innerHTML = '<div class="alert alert-info"><i class="fas fa-spinner fa-spin me-2"></i>Testing...</div>';
+            
+            fetch(endpoint)
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                })
+                .then(data => {
+                    resultDiv.innerHTML = `
+                        <div class="alert alert-success">
+                            <h6><i class="fas fa-check-circle me-2"></i>Success!</h6>
+                            <strong>Endpoint:</strong> ${endpoint}<br>
+                            <strong>Response:</strong><br>
+                            <pre class="mt-2">${data}</pre>
+                        </div>
+                    `;
+                })
+                .catch(error => {
+                    resultDiv.innerHTML = `
+                        <div class="alert alert-danger">
+                            <h6><i class="fas fa-exclamation-triangle me-2"></i>Error</h6>
+                            <strong>Endpoint:</strong> ${endpoint}<br>
+                            <strong>Error:</strong> ${error.message}
+                        </div>
+                    `;
+                });
+        }
+        
+        function testSwaggerJSON() {
+            const resultDiv = document.getElementById('apiResult');
+            resultDiv.innerHTML = '<div class="alert alert-info"><i class="fas fa-spinner fa-spin me-2"></i>Testing Swagger JSON...</div>';
+            
+            fetch('/swagger/v1/swagger.json')
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                })
+                .then(data => {
+                    resultDiv.innerHTML = `
+                        <div class="alert alert-success">
+                            <h6><i class="fas fa-check-circle me-2"></i>Swagger JSON Working!</h6>
+                            <strong>Available Endpoints:</strong><br>
+                            <pre class="mt-2">${JSON.stringify(data.paths, null, 2)}</pre>
+                        </div>
+                    `;
+                })
+                .catch(error => {
+                    resultDiv.innerHTML = `
+                        <div class="alert alert-warning">
+                            <h6><i class="fas fa-exclamation-triangle me-2"></i>Swagger JSON Issue</h6>
+                            <strong>Error:</strong> ${error.message}<br><br>
+                            <strong>Alternative:</strong> Use the "Open Swagger UI" button above for interactive API documentation.<br><br>
+                            <strong>Available Test Endpoints:</strong><br>
+                            • GET /api/test - Test connection<br>
+                            • GET /api/test/123 - Test with parameter
+                        </div>
+                    `;
+                });
+        }
+    </script>
+}

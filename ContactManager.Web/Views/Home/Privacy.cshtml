@@ -1,0 +1,916 @@
+@{
+    ViewData["Title"] = "Privacy Policy | ContactManager";
+}
+
+@section Styles {
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #16a34a;
+            --warning-color: #d97706;
+            --danger-color: #dc2626;
+            --info-color: #0891b2;
+            --light-bg: #f8fafc;
+            --border-color: #e2e8f0;
+            --text-muted: #64748b;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .privacy-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--light-bg) 0%, #f1f5f9 100%);
+            border-radius: 1rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .update-banner {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-icon {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-card {
+            background: var(--light-bg);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            height: 100%;
+        }
+
+        .info-card h4 {
+            color: var(--primary-color);
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .checklist-item:hover {
+            background-color: var(--light-bg);
+        }
+
+        .checklist-icon {
+            color: var(--success-color);
+            margin-top: 0.125rem;
+            flex-shrink: 0;
+        }
+
+        .rights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .right-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .right-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .right-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.25rem;
+        }
+
+        .right-card:nth-child(1) .right-icon { background: #dbeafe; color: var(--primary-color); }
+        .right-card:nth-child(2) .right-icon { background: #dcfce7; color: var(--success-color); }
+        .right-card:nth-child(3) .right-icon { background: #fee2e2; color: var(--danger-color); }
+        .right-card:nth-child(4) .right-icon { background: #fef3c7; color: var(--warning-color); }
+        .right-card:nth-child(5) .right-icon { background: #e0e7ff; color: #6366f1; }
+        .right-card:nth-child(6) .right-icon { background: #f3f4f6; color: var(--secondary-color); }
+
+        .modern-table {
+            background: white;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .modern-table table {
+            margin: 0;
+        }
+
+        .modern-table th {
+            background: var(--light-bg);
+            font-weight: 600;
+            color: #374151;
+            border: none;
+            padding: 1rem;
+        }
+
+        .modern-table td {
+            padding: 1rem;
+            border-top: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        .modern-table tbody tr:hover {
+            background-color: var(--light-bg);
+        }
+
+        .alert-custom {
+            border-radius: 0.75rem;
+            border: none;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .alert-info-custom {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            color: #1e40af;
+        }
+
+        .alert-warning-custom {
+            background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+            color: #92400e;
+        }
+
+        .alert-success-custom {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+            color: #166534;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid #bbf7d0;
+        }
+
+        .cookie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cookie-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .cookie-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .cookie-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+
+        .cookie-card:nth-child(1) .cookie-icon { background: #dbeafe; color: var(--primary-color); }
+        .cookie-card:nth-child(2) .cookie-icon { background: #dcfce7; color: var(--success-color); }
+        .cookie-card:nth-child(3) .cookie-icon { background: #e0e7ff; color: #6366f1; }
+
+        @@media (max-width: 768px) {
+            .privacy-page {
+                padding: 1rem 0.5rem;
+            }
+
+            .hero-section {
+                padding: 2rem 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-card {
+                padding: 1.5rem;
+            }
+
+            .info-grid, .rights-grid, .cookie-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-actions {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .btn-modern {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-modern:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+            color: white;
+        }
+    </style>
+}
+
+<div class="privacy-page">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-title">
+            <i class="fas fa-shield-alt me-3"></i>
+            Privacy Policy
+        </div>
+        <p class="hero-subtitle">
+            We take the protection of your personal data seriously and ensure 
+            complete transparency in information processing matters
+        </p>
+    </div>
+
+    <!-- Last Updated Banner -->
+    <div class="update-banner">
+        <div class="d-flex align-items-center">
+            <i class="fas fa-calendar-alt fa-lg me-3"></i>
+            <div>
+                <h5 class="mb-1">Last Updated</h5>
+                <p class="mb-0"><strong>February 15, 2026</strong> - We regularly update our privacy policy 
+                in accordance with changes in legislation and improvements to our services.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-info-circle section-icon"></i>
+            Introduction
+        </h2>
+        <p class="mb-3">
+            Welcome to ContactManager! We understand the importance of your information privacy and 
+            commit to protecting your personal data in accordance with the strictest international standards.
+        </p>
+        <p class="mb-3">
+            This Privacy Policy describes how we collect, use, store and protect 
+            the information you provide when using our contact manager. We follow 
+            GDPR (EU General Data Protection Regulation), CCPA (California Consumer Privacy Act) 
+            and other applicable data protection laws.
+        </p>
+        <p class="mb-0">
+            By using our service, you trust us with your information, and we do everything possible to justify 
+            this trust by ensuring transparency and control over your data.
+        </p>
+    </div>
+
+    <!-- Information We Collect -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-database section-icon"></i>
+            Information We Collect
+        </h2>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h4><i class="fas fa-user me-2"></i>Personal Information</h4>
+                <ul class="list-unstyled">
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Contact names and surnames</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Date of birth</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Contact phone numbers</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Marital status information</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Financial information (salary)</span>
+                    </li>
+                </ul>
+                <p class="small text-muted mb-0">
+                    <i class="fas fa-shield-alt me-1"></i>All personal information is encrypted during storage and transmission
+                </p>
+            </div>
+            
+            <div class="info-card">
+                <h4><i class="fas fa-cogs me-2"></i>Technical Information</h4>
+                <ul class="list-unstyled">
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>IP address and geographical location</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Browser type and operating system</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Access time and session duration</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Device information</span>
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <span>Service usage data</span>
+                    </li>
+                </ul>
+                <p class="small text-muted mb-0">
+                    <i class="fas fa-shield-alt me-1"></i>Used exclusively for improving service performance
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- How We Use Information -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-bullseye section-icon"></i>
+            How We Use Your Information
+        </h2>
+        
+        <div class="row mb-4">
+            <div class="col-md-4 mb-3">
+                <div class="text-center">
+                    <i class="fas fa-bullseye fa-3x text-primary mb-3"></i>
+                    <h5>Core Functions</h5>
+                    <p class="small">To provide and support core contact manager functionality</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="text-center">
+                    <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                    <h5>Service Improvement</h5>
+                    <p class="small">For usage analysis and functionality enhancement</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="text-center">
+                    <i class="fas fa-shield-alt fa-3x text-warning mb-3"></i>
+                    <h5>Security</h5>
+                    <p class="small">For fraud prevention and security assurance</p>
+                </div>
+            </div>
+        </div>
+        
+        <h5 class="mt-4 mb-3">Specific Usage Examples:</h5>
+        <ul class="list-unstyled">
+            <li class="checklist-item">
+                <i class="fas fa-address-book checklist-icon"></i>
+                <div>
+                    <strong>Contact Management:</strong> 
+                    Store and organize your contacts with quick search and filtering capabilities
+                </div>
+            </li>
+            <li class="checklist-item">
+                <i class="fas fa-file-import checklist-icon"></i>
+                <div>
+                    <strong>Data Import:</strong> 
+                    Process and import contacts from CSV files with data validation
+                </div>
+            </li>
+            <li class="checklist-item">
+                <i class="fas fa-bell checklist-icon"></i>
+                <div>
+                    <strong>Notifications:</strong> 
+                    Send important security and service update notifications
+                </div>
+            </li>
+            <li class="checklist-item">
+                <i class="fas fa-bug checklist-icon"></i>
+                <div>
+                    <strong>Technical Support:</strong> 
+                    Diagnose and resolve technical issues
+                </div>
+            </li>
+            <li class="checklist-item">
+                <i class="fas fa-chart-bar checklist-icon"></i>
+                <div>
+                    <strong>Analytics:</strong> 
+                    Collect anonymous statistics to improve user experience
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Data Protection -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-lock section-icon"></i>
+            How We Protect Your Data
+        </h2>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h4><i class="fas fa-encryption me-2"></i>Technical Measures</h4>
+                <ul class="list-unstyled">
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Encryption:</strong> All data is encrypted during transmission and storage
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>HTTPS:</strong> All connections are protected with SSL/TLS certificates
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Secure Servers:</strong> Data is stored on protected servers
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Backup:</strong> Regular backups to protect against data loss
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Security Audits:</strong> Regular system security checks
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h4><i class="fas fa-users me-2"></i>Organizational Measures</h4>
+                <ul class="list-unstyled">
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Limited Access:</strong> Only authorized personnel have data access
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Staff Training:</strong> Regular employee privacy training
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Privacy Policies:</strong> Clear internal policies and procedures
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Contracts:</strong> Confidentiality agreements with partners
+                    </li>
+                    <li class="checklist-item">
+                        <i class="fas fa-check checklist-icon"></i>
+                        <strong>Legal Compliance:</strong> Compliance with all applicable data protection laws
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your Rights -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-user-shield section-icon"></i>
+            Your Rights
+        </h2>
+        
+        <p class="mb-4">
+            In accordance with GDPR, CCPA and other data protection laws, you have the following rights 
+            regarding your personal data:
+        </p>
+        
+        <div class="rights-grid">
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h5>Right to Access</h5>
+                <p class="small">You can request a copy of all personal data we store about you.</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h5>Right to Rectification</h5>
+                <p class="small">You can correct inaccurate or incomplete information about yourself.</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-trash"></i>
+                </div>
+                <h5>Right to Erasure</h5>
+                <p class="small">You can request deletion of your personal data ("right to be forgotten").</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <h5>Right to Restrict Processing</h5>
+                <p class="small">You can limit how we use your data.</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h5>Right to Data Portability</h5>
+                <p class="small">You can request transfer of your data to another service provider.</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-ban"></i>
+                </div>
+                <h5>Right to Object</h5>
+                <p class="small">You can object to processing of your data for specific purposes.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert-custom alert-info-custom">
+            <h5><i class="fas fa-lightbulb me-2"></i>How to Exercise Your Rights</h5>
+            <p class="mb-2">To exercise any of the above rights, please contact us at: <strong>privacy@contactmanager.com</strong></p>
+            <p class="mb-0">We will respond to your request within 30 days. In some cases, we may request additional information to verify your identity.</p>
+        </div>
+    </div>
+
+    <!-- Data Retention -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-clock section-icon"></i>
+            Data Retention Period
+        </h2>
+        
+        <p class="mb-3">
+            We retain your personal data only as long as necessary to achieve the purposes 
+            described in this Privacy Policy, including:
+        </p>
+        
+        <div class="modern-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Retention Period</th>
+                        <th>Justification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Contact Information</td>
+                        <td>Until account deletion + 30 days</td>
+                        <td>To provide core service functionality</td>
+                    </tr>
+                    <tr>
+                        <td>Access Logs</td>
+                        <td>12 months</td>
+                        <td>For security and incident investigation</td>
+                    </tr>
+                    <tr>
+                        <td>Backups</td>
+                        <td>30 days</td>
+                        <td>For data recovery in case of technical failures</td>
+                    </tr>
+                    <tr>
+                        <td>Analytics Data</td>
+                        <td>24 months (anonymized)</td>
+                        <td>For service improvement and trend analysis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="alert alert-custom alert-warning-custom">
+            <h5><i class="fas fa-exclamation-triangle me-2"></i>Data Deletion</h5>
+            <p class="mb-0">
+                When you delete your account, we will begin the process of deleting all associated data within 30 days. 
+                Some data may be retained longer if required by law or for legitimate business purposes.
+            </p>
+        </div>
+    </div>
+
+    <!-- Cookies and Tracking -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-cookie-bite section-icon"></i>
+            Cookies and Tracking
+        </h2>
+        
+        <p class="mb-3">
+            We use cookies and similar tracking technologies to enhance your experience with our service. 
+            A cookie is a small text file that is stored on your device.
+        </p>
+        
+        <h5 class="mb-3">Types of cookies we use:</h5>
+        <div class="cookie-grid">
+            <div class="cookie-card">
+                <div class="cookie-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <h6>Essential Cookies</h6>
+                <p class="small">Provide basic website functionality</p>
+            </div>
+            
+            <div class="cookie-card">
+                <div class="cookie-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h6>Analytics Cookies</h6>
+                <p class="small">Help us understand how you use our site</p>
+            </div>
+            
+            <div class="cookie-card">
+                <div class="cookie-icon">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <h6>Functional Cookies</h6>
+                <p class="small">Remember your preferences and settings</p>
+            </div>
+        </div>
+        
+        <div class="alert alert-custom alert-info-custom">
+            <h5><i class="fas fa-info-circle me-2"></i>Cookie Management</h5>
+            <p class="mb-2">You can manage cookie settings in your browser. Note that disabling some cookies may affect website functionality.</p>
+            <p class="mb-0">We do not use advertising cookies and do not share information with third parties for advertising purposes.</p>
+        </div>
+    </div>
+
+    <!-- Third-Party Services -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-handshake section-icon"></i>
+            Third-Party Services
+        </h2>
+        
+        <p class="mb-3">
+            We may use third-party services to enhance our product's functionality. 
+            These services have their own privacy policies, and we carefully select partners 
+            who share our data protection standards.
+        </p>
+        
+        <h5 class="mb-3">Current third-party services:</h5>
+        <div class="modern-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Data</th>
+                        <th>Privacy Policy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fab fa-microsoft me-2"></i>Microsoft Azure</td>
+                        <td>Hosting and infrastructure</td>
+                        <td>Anonymous technical data</td>
+                        <td><a href="https://privacy.microsoft.com" target="_blank" class="text-decoration-none">
+                            <i class="fas fa-external-link-alt me-1"></i>Microsoft Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-database me-2"></i>SQL Server/SQLite</td>
+                        <td>Data storage</td>
+                        <td>Your contact data (encrypted)</td>
+                        <td><a href="https://www.microsoft.com/en-us/trust-center/privacy" target="_blank" class="text-decoration-none">
+                            <i class="fas fa-external-link-alt me-1"></i>Microsoft Trust Center</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-chart-bar me-2"></i>DataTables</td>
+                        <td>Table functionality</td>
+                        <td>Table interaction data</td>
+                        <td><a href="https://datatables.net/privacy" target="_blank" class="text-decoration-none">
+                            <i class="fas fa-external-link-alt me-1"></i>DataTables Privacy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="alert alert-custom alert-warning-custom">
+            <h5><i class="fas fa-exclamation-triangle me-2"></i>Important</h5>
+            <p class="mb-0">We never share your personal contact data with third-party advertising companies or marketing agencies.</p>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-envelope section-icon"></i>
+            Contact Information
+        </h2>
+        
+        <div class="contact-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-user-shield me-2"></i>Privacy Officer</h5>
+                    <p class="mb-1"><strong>Name:</strong> ContactManager Privacy Team</p>
+                    <p class="mb-1"><strong>Email:</strong> <a href="mailto:privacy@contactmanager.com" class="text-decoration-none">privacy@contactmanager.com</a></p>
+                    <p class="mb-1"><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p class="mb-0"><strong>Address:</strong> 123 Privacy Street, Data Protection City, DP 12345, USA</p>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fas fa-clock me-2"></i>Response Time</h5>
+                    <p class="mb-1"><strong>Standard requests:</strong> 30 days</p>
+                    <p class="mb-1"><strong>Complex requests:</strong> 60 days (with notification)</p>
+                    <p class="mb-1"><strong>Urgent security matters:</strong> 24 hours</p>
+                    <p class="mb-0"><strong>Business days:</strong> Monday - Friday, 9:00 - 18:00 EST</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Changes to Privacy Policy -->
+    <div class="section-card">
+        <h2 class="section-title">
+            <i class="fas fa-sync-alt section-icon"></i>
+            Changes to Privacy Policy
+        </h2>
+        
+        <p class="mb-3">
+            We may periodically update our Privacy Policy. We will notify you of any 
+            changes by posting the new Privacy Policy on this page and updating the 
+            <strong>"Last Updated"</strong> date at the top of the page.
+        </p>
+        
+        <h5 class="mb-3">Change notification methods:</h5>
+        <ul class="list-unstyled">
+            <li class="checklist-item">
+                <i class="fas fa-check checklist-icon"></i>
+                <strong>Email notifications:</strong> For significant changes
+            </li>
+            <li class="checklist-item">
+                <i class="fas fa-check checklist-icon"></i>
+                <strong>Pop-up notifications:</strong> Upon system login
+            </li>
+            <li class="checklist-item">
+                <i class="fas fa-check checklist-icon"></i>
+                <strong>Blog updates:</strong> Detailed explanations of changes
+            </li>
+            <li class="checklist-item">
+                <i class="fas fa-check checklist-icon"></i>
+                <strong>Change history:</strong> Access to previous policy versions
+            </li>
+        </ul>
+        
+        <div class="alert alert-custom alert-info-custom">
+            <h5><i class="fas fa-lightbulb me-2"></i>Important</h5>
+            <p class="mb-0">
+                Your continued use of our services after any changes to this Privacy Policy 
+                constitutes your acceptance of such changes.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Actions -->
+    <div class="footer-actions">
+        <p class="text-muted mb-3">
+            <i class="fas fa-shield-alt me-2"></i>
+            Your privacy is our priority. If you have any questions about this Privacy Policy, 
+            please don't hesitate to contact us.
+        </p>
+        <a href="/Contacts" class="btn-modern">
+            <i class="fas fa-arrow-left me-2"></i>
+            Back to Contact Manager
+        </a>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Add smooth scrolling for better UX
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation for sections
+            const sections = document.querySelectorAll('.section-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+
+            // Add click tracking for external links (privacy-friendly)
+            document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Basic analytics - no personal data collected
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'click', {
+                            'event_category': 'External Link',
+                            'event_label': this.href,
+                            'transport_type': 'beacon'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

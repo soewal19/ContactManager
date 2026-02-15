@@ -1,0 +1,431 @@
+/* Aurora Effect from React Bits - Enhanced UI/UX */
+.aurora-container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash-cursor-host {
+    cursor: none;
+}
+
+.splash-cursor-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    mix-blend-mode: screen;
+}
+
+.aurora-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse 80% 50% at 50% 0%, 
+        rgba(120, 119, 198, 0.3) 0%, 
+        rgba(120, 119, 198, 0.1) 50%, 
+        transparent 100%);
+    animation: aurora-flow 20s ease-in-out infinite;
+    z-index: 1;
+}
+
+.aurora-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse 60% 40% at 30% 20%, 
+        rgba(255, 148, 180, 0.4) 0%, 
+        transparent 70%);
+    animation: aurora-flow 15s ease-in-out infinite reverse;
+}
+
+.aurora-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse 70% 60% at 70% 30%, 
+        rgba(59, 130, 246, 0.3) 0%, 
+        transparent 70%);
+    animation: aurora-flow 25s ease-in-out infinite;
+}
+
+@keyframes aurora-flow {
+    0%, 100% {
+        transform: translateX(0) translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translateX(-10%) translateY(-5%) scale(1.1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(10%) translateY(5%) scale(0.9);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateX(-5%) translateY(10%) scale(1.05);
+        opacity: 0.9;
+    }
+}
+
+/* Enhanced Aurora Content - Modern Glassmorphism */
+.aurora-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 
+        0 8px 32px 0 rgba(0, 0, 0, 0.37),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Typography Improvements */
+.aurora-content .display-4 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+}
+
+.aurora-content .display-4 small {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    display: block;
+    margin-top: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.aurora-content .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+/* Feature Cards - Modern Glassmorphism */
+.feature-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem 1.5rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00ff88, #00ffff, #ff00ff);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-card .feature-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.75rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.feature-card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Enhanced CTA Buttons */
+.btn-aurora {
+    position: relative;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.btn-aurora-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-aurora-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    color: white;
+}
+
+.btn-aurora-outline {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.btn-aurora-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Info Cards Section - Modern Glassmorphism */
+.info-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 2.5rem;
+    box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.info-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
+.info-card ul li {
+    color: #4a5568;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* Legacy styles for backward compatibility */
+.electric-border {
+    position: relative;
+    padding: 2rem;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    overflow: hidden;
+}
+
+.electric-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        #00ff88, #00ffff, #ff00ff, #ffff00, #00ff88);
+    background-size: 400% 400%;
+    border-radius: 15px;
+    animation: electric-gradient 3s ease infinite;
+    z-index: -1;
+}
+
+.electric-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    border-radius: 13px;
+    z-index: -1;
+}
+
+@keyframes electric-gradient {
+    0% {
+        background-position: 0% 50%;
+        filter: blur(2px) brightness(1.2);
+    }
+    50% {
+        background-position: 100% 50%;
+        filter: blur(3px) brightness(1.5);
+    }
+    100% {
+        background-position: 0% 50%;
+        filter: blur(2px) brightness(1.2);
+    }
+}
+
+.electric-border-lightning {
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+.electric-border-lightning::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, 
+        #00ff88 0%, 
+        #00ffff 25%, 
+        #ff00ff 50%, 
+        #ffff00 75%, 
+        #00ff88 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: electric-lightning 2s linear infinite;
+}
+
+@keyframes electric-lightning {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px #00ff88) drop-shadow(0 0 10px #00ffff);
+    }
+    25% {
+        opacity: 0.8;
+        transform: scale(1.02);
+        filter: drop-shadow(0 0 8px #ff00ff) drop-shadow(0 0 15px #ffff00);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(0.98);
+        filter: drop-shadow(0 0 12px #00ffff) drop-shadow(0 0 20px #00ff88);
+    }
+    75% {
+        opacity: 0.9;
+        transform: scale(1.01);
+        filter: drop-shadow(0 0 6px #ffff00) drop-shadow(0 0 12px #ff00ff);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .aurora-container {
+        min-height: 60vh;
+        padding: 1rem;
+    }
+    
+    .aurora-content {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .aurora-content .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .aurora-content .display-4 small {
+        font-size: 1.25rem;
+    }
+    
+    .aurora-content .lead {
+        font-size: 1.1rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .btn-aurora {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .electric-border,
+    .electric-border-lightning {
+        padding: 1.5rem;
+    }
+    
+    .info-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

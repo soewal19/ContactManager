@@ -1,0 +1,335 @@
+@model IEnumerable<ContactManager.Core.Models.Contact>
+@{
+    ViewData["Title"] = "Contact Manager | Contact Management";
+}
+
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="~/Frontend/css/contact-manager.css">
+}
+
+<!-- Hero Section with Value Proposition -->
+<section class="hero-section mb-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold text-primary mb-3">
+            <i class="fas fa-users-cog me-3"></i>
+            Contact Manager
+        </h1>
+        <p class="lead text-muted mb-4">
+            Professional solution for contact management with bulk data upload support, 
+            intelligent filtering and secure information storage
+        </p>
+        <div class="hero-stats row text-center mb-4">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h3 class="text-primary" id="totalContacts">@Model.Count()</h3>
+                    <p class="text-muted">Total Contacts</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h3 class="text-success" id="marriedCount">0</h3>
+                    <p class="text-muted">Married</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h3 class="text-info" id="avgSalary">0</h3>
+                    <p class="text-muted">Average Salary</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h3 class="text-warning" id="avgAge">0</h3>
+                    <p class="text-muted">Average Age</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Alert Container -->
+<div id="alertContainer" class="alert-container mb-4"></div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle me-2"></i>@TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-triangle me-2"></i>@TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<!-- Quick Actions Toolbar -->
+<section class="quick-actions mb-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="action-card">
+                <h5><i class="fas fa-cloud-upload-alt me-2"></i>Quick Data Upload</h5>
+                <p class="text-muted">Import contacts from CSV file in seconds</p>
+                <form id="csvUploadForm" asp-action="Upload" method="post" enctype="multipart/form-data" class="upload-form">
+                    @Html.AntiForgeryToken()
+                    
+                    <div class="upload-area" onclick="document.getElementById('csvFile').click()">
+                        <div class="upload-icon">
+                            <i class="fas fa-file-csv fa-3x text-primary"></i>
+                        </div>
+                        <div class="upload-text">
+                            <h6>Drag CSV file here or click to select</h6>
+                            <p class="text-muted">Supported formats: .csv up to 10MB</p>
+                        </div>
+                    </div>
+                    
+                    <input type="file" id="csvFile" name="file" class="d-none" accept=".csv" required 
+                           onchange="handleFileSelect(this)">
+                    
+                    <div id="selectedFile" class="selected-file d-none">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        <span id="fileName"></span>
+                    </div>
+                    
+                    <button type="submit" id="uploadButton" class="btn btn-primary btn-lg w-100 mt-3">
+                        <i class="fas fa-upload me-2"></i>Upload Contacts
+                    </button>
+                </form>
+                <div id="uploadStatus" class="upload-status mt-3"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="action-card">
+                <h5><i class="fas fa-download me-2"></i>Template & Instructions</h5>
+                <p class="text-muted">Download CSV file template and review formatting guidelines</p>
+                <div class="template-actions">
+                    <a href="/templates/sample_contacts_400.csv" class="btn btn-outline-primary btn-sm me-2">
+                        <i class="fas fa-file-download me-1"></i>Download Template
+                    </a>
+                    <button class="btn btn-outline-info btn-sm" onclick="showFormattingGuide()">
+                        <i class="fas fa-info-circle me-1"></i>Formatting
+                    </button>
+                </div>
+                <div class="formatting-guide d-none mt-3" id="formattingGuide">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h6>CSV File Requirements:</h6>
+                            <ul class="small">
+                                <li>First row must contain headers</li>
+                                <li>Columns: Name, DateOfBirth, Married, Phone, Salary</li>
+                                <li>Birth date: YYYY-MM-DD (example: 1990-01-15)</li>
+                                <li>Marital status: true/false or Yes/No</li>
+                                <li>Phone: international format (+1234567890)</li>
+                                <li>Salary: number without currency symbols</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advanced Filters Section -->
+<section class="filters-section mb-4">
+    <div class="card">
+        <div class="card-header bg-light">
+            <h5 class="mb-0"><i class="fas fa-filter me-2"></i>Advanced Filtering and Search</h5>
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label for="searchName" class="form-label"><i class="fas fa-user me-1"></i>Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" id="searchName" class="form-control" placeholder="Search by name..."
+                               aria-describedby="nameHelp">
+                    </div>
+                    <div id="nameHelp" class="form-text">Enter part of name to filter</div>
+                </div>
+                <div class="col-md-3">
+                    <label for="searchPhone" class="form-label"><i class="fas fa-phone me-1"></i>Phone</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" id="searchPhone" class="form-control" placeholder="Search by phone..."
+                               aria-describedby="phoneHelp">
+                    </div>
+                    <div id="phoneHelp" class="form-text">Format: +1234567890</div>
+                </div>
+                <div class="col-md-3">
+                    <label for="filterMarried" class="form-label"><i class="fas fa-ring me-1"></i>Marital Status</label>
+                    <select id="filterMarried" class="form-select">
+                        <option value="">All Contacts</option>
+                        <option value="Yes">Married</option>
+                        <option value="No">Single</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="salaryRange" class="form-label"><i class="fas fa-money-bill-wave me-1"></i>Salary Range</label>
+                    <div class="input-group">
+                        <input type="number" id="minSalary" class="form-control" placeholder="From" min="0" step="1000">
+                        <span class="input-group-text">-</span>
+                        <input type="number" id="maxSalary" class="form-control" placeholder="To" min="0" step="1000">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-end">
+                    <button type="button" class="btn btn-outline-secondary btn-sm me-2" onclick="resetFilters()">
+                        <i class="fas fa-undo me-1"></i>Reset
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="applyFilters()">
+                        <i class="fas fa-search me-1"></i>Apply Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts Table Section -->
+<section class="contacts-table-section mb-5">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center bg-primary text-white">
+            <h5 class="mb-0"><i class="fas fa-table me-2"></i>Contact List</h5>
+            <div class="table-actions">
+                <button class="btn btn-light btn-sm me-2" onclick="exportToCSV()">
+                    <i class="fas fa-file-export me-1"></i>Export
+                </button>
+                <button class="btn btn-light btn-sm" onclick="refreshTable()">
+                    <i class="fas fa-sync-alt me-1"></i>Refresh
+                </button>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table id="contactsTable" class="table table-hover table-striped mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="sortable" data-sort="name"><i class="fas fa-user me-2"></i>Name <i class="fas fa-sort sort-icon"></i></th>
+                            <th class="sortable" data-sort="dob"><i class="fas fa-calendar me-2"></i>Birth Date <i class="fas fa-sort sort-icon"></i></th>
+                            <th class="sortable" data-sort="married"><i class="fas fa-ring me-2"></i>Marital Status <i class="fas fa-sort sort-icon"></i></th>
+                            <th class="sortable" data-sort="phone"><i class="fas fa-phone me-2"></i>Phone <i class="fas fa-sort sort-icon"></i></th>
+                            <th class="sortable" data-sort="salary"><i class="fas fa-money-bill-wave me-2"></i>Salary <i class="fas fa-sort sort-icon"></i></th>
+                            <th class="text-center"><i class="fas fa-cogs me-2"></i>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contactsTableBody">
+                        @foreach (var contact in Model)
+                        {
+                            <tr id="contact-@contact.Id" data-id="@contact.Id" class="contact-row">
+                                <td class="contact-name fw-bold">@contact.Name</td>
+                                <td class="contact-dob">@contact.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                                <td class="contact-married">
+                                    <span class="badge @(contact.Married ? "bg-success" : "bg-secondary")">
+                                        @(contact.Married ? "Yes" : "No")
+                                    </span>
+                                </td>
+                                <td class="contact-phone">
+                                    <a href="tel:@contact.Phone" class="text-decoration-none">
+                                        <i class="fas fa-phone-alt me-1 text-success"></i>@contact.Phone
+                                    </a>
+                                </td>
+                                <td class="contact-salary fw-bold text-primary">@contact.Salary.ToString("F2") $</td>
+                                <td class="text-center action-buttons">
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-sm btn-outline-primary btn-action" 
+                                                onclick="editContact(@contact.Id)" 
+                                                title="Edit Contact"
+                                                data-bs-toggle="tooltip">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger btn-action" 
+                                                onclick="deleteContact(@contact.Id, '@contact.Name.Replace("'", "\\'")')" 
+                                                title="Delete Contact"
+                                                data-bs-toggle="tooltip">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info btn-action" 
+                                                onclick="viewContactDetails(@contact.Id)" 
+                                                title="View Details"
+                                                data-bs-toggle="tooltip">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                <table>
+            </div>
+        </div>
+        <div class="card-footer bg-light">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="table-info">
+                    <span class="text-muted">Showing <span id="visibleCount">@Model.Count()</span> of <span id="totalCount">@Model.Count()</span> contacts</span>
+                </div>
+                <div class="table-pagination">
+                    <!-- Pagination will be generated by DataTables -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section mb-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="feature-card text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-shield-alt fa-3x text-success"></i>
+                </div>
+                <h5>Data Security</h5>
+                <p class="text-muted">All data is protected with modern encryption methods and stored in accordance with international security standards</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="feature-card text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-sync-alt fa-3x text-info"></i>
+                </div>
+                <h5>Automatic Synchronization</h5>
+                <p class="text-muted">Data is automatically saved and synchronized across all your devices in real time</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="feature-card text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-chart-line fa-3x text-warning"></i>
+                </div>
+                <h5>Analytics & Reports</h5>
+                <p class="text-muted">Get detailed analytics on your contacts and generate professional reports</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Details Modal -->
+<div class="modal fade" id="contactDetailsModal" tabindex="-1" aria-labelledby="contactDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactDetailsModalLabel">
+                    <i class="fas fa-user me-2"></i>Contact Details
+                <h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="contactDetailsContent">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Frontend/js/contact-manager.js"></script>
+}

@@ -1,0 +1,1228 @@
+2026-02-13 09:18:36.305 +02:00 [INF] Starting database initialization
+2026-02-13 09:18:36.390 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:18:36.502 +02:00 [INF] Starting database initialization
+2026-02-13 09:18:37.058 +02:00 [INF] Initializing SQLite database
+2026-02-13 09:18:37.076 +02:00 [INF] Found existing SQLite database, will recreate for clean state
+2026-02-13 09:18:37.078 +02:00 [INF] Existing SQLite database deleted successfully
+2026-02-13 09:18:37.458 +02:00 [INF] SQLite database and tables created successfully
+2026-02-13 09:18:37.460 +02:00 [INF] Database initialization completed in 957ms
+2026-02-13 09:18:37.465 +02:00 [INF] Database initialization completed successfully
+2026-02-13 09:18:37.595 +02:00 [INF] User profile is available. Using 'C:\Users\Eugene\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-13 09:18:37.685 +02:00 [INF] Now listening on: http://localhost:5021
+2026-02-13 09:18:37.687 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 09:18:37.690 +02:00 [INF] Hosting environment: Development
+2026-02-13 09:18:37.691 +02:00 [INF] Content root path: E:\TestTask\Bits OrchestraTest Task\ContactManager.Web
+2026-02-13 09:32:33.411 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/?ide_webview_request_time=1770967953024 - null null
+2026-02-13 09:32:33.434 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-02-13 09:32:33.476 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:32:33.573 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 09:32:33.619 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 09:32:33.695 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 09:32:33.703 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web) in 75.3128ms
+2026-02-13 09:32:33.710 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 09:32:33.712 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:32:33.803 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/?ide_webview_request_time=1770967953024 - 302 0 null 395.9746ms
+2026-02-13 09:32:33.860 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:32:33.868 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:32:33.871 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:32:33.904 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:32:33.907 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:32:34.557 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:32:34.720 +02:00 [INF] Executed ViewResult - view Index executed in 169.6417ms.
+2026-02-13 09:32:34.723 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 816.1656ms
+2026-02-13 09:32:34.726 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:32:34.728 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:32:34.738 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 878.3843ms
+2026-02-13 09:32:34.745 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-02-13 09:32:34.749 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:32:34.750 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - null null
+2026-02-13 09:32:34.755 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-02-13 09:32:34.759 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:32:34.763 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - null null
+2026-02-13 09:32:34.763 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-02-13 09:32:34.774 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:32:34.784 +02:00 [INF] The file /css/site.css was not modified
+2026-02-13 09:32:34.784 +02:00 [INF] The file /ContactManager.Web.styles.css was not modified
+2026-02-13 09:32:34.784 +02:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2026-02-13 09:32:34.784 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-02-13 09:32:34.787 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 37.6042ms
+2026-02-13 09:32:34.790 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 34.8061ms
+2026-02-13 09:32:34.793 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - 304 null text/css 43.0404ms
+2026-02-13 09:32:34.796 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - 304 null text/javascript 33.4473ms
+2026-02-13 09:32:34.798 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 53.2052ms
+2026-02-13 09:32:34.801 +02:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-02-13 09:32:34.807 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:32:34.817 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:32:34.837 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 73.9154ms
+2026-02-13 09:32:34.842 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-02-13 09:32:34.846 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:32:34.855 +02:00 [INF] The file /js/site.js was not modified
+2026-02-13 09:32:34.857 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:32:34.858 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 16.5983ms
+2026-02-13 09:32:34.859 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 42.1336ms
+2026-02-13 09:32:34.870 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:33:29.557 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:33:29.561 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:29.563 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:29.565 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.7446ms
+2026-02-13 09:33:29.570 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 09:33:47.979 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Home/Privacy - null null
+2026-02-13 09:33:47.983 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:47.985 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 09:33:47.988 +02:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 09:33:47.993 +02:00 [INF] Executing ViewResult, running view Privacy.
+2026-02-13 09:33:48.089 +02:00 [INF] Executed ViewResult - view Privacy executed in 97.2268ms.
+2026-02-13 09:33:48.091 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web) in 100.4695ms
+2026-02-13 09:33:48.094 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 09:33:48.096 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:48.098 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Home/Privacy - 200 null text/html; charset=utf-8 118.5109ms
+2026-02-13 09:33:52.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:33:52.829 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:52.831 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:33:52.833 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:33:52.846 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:33:52.915 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:33:52.920 +02:00 [INF] Executed ViewResult - view Index executed in 5.9287ms.
+2026-02-13 09:33:52.923 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 77.0639ms
+2026-02-13 09:33:52.925 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:33:52.927 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:52.929 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 104.1062ms
+2026-02-13 09:33:52.936 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:33:52.937 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:33:52.981 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:52.986 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:53.102 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:53.107 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:53.122 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 185.0835ms
+2026-02-13 09:33:53.123 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 187.0369ms
+2026-02-13 09:33:53.128 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:33:53.133 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:33:56.492 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ - null null
+2026-02-13 09:33:56.496 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:56.497 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 09:33:56.499 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 09:33:56.503 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 09:33:56.505 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web) in 2.2903ms
+2026-02-13 09:33:56.507 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 09:33:56.509 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:56.510 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ - 302 0 null 18.2685ms
+2026-02-13 09:33:56.515 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:33:56.520 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:56.521 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:33:56.523 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:33:56.528 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:33:56.532 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:33:56.537 +02:00 [INF] Executed ViewResult - view Index executed in 5.1207ms.
+2026-02-13 09:33:56.540 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 13.8957ms
+2026-02-13 09:33:56.542 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:33:56.544 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:56.546 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 30.4885ms
+2026-02-13 09:33:56.552 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:33:56.553 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:33:56.559 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:56.563 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:56.563 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:56.565 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:56.566 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 13.7503ms
+2026-02-13 09:33:56.568 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 14.6554ms
+2026-02-13 09:33:56.572 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:33:56.577 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:33:58.320 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:33:58.324 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:58.325 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:33:58.327 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:33:58.329 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:33:58.332 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:33:58.335 +02:00 [INF] Executed ViewResult - view Index executed in 3.6986ms.
+2026-02-13 09:33:58.338 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 8.5472ms
+2026-02-13 09:33:58.340 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:33:58.342 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:58.345 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 24.7848ms
+2026-02-13 09:33:58.352 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:33:58.352 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:33:58.360 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:58.361 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:33:58.364 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:58.364 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:33:58.366 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 14.349ms
+2026-02-13 09:33:58.367 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 15.4221ms
+2026-02-13 09:33:58.372 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:33:58.376 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:34:23.998 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/templates/sample_contacts_400.csv - null null
+2026-02-13 09:34:24.003 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:34:24.005 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:34:24.007 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/templates/sample_contacts_400.csv - 404 0 null 9.0324ms
+2026-02-13 09:34:24.012 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/templates/sample_contacts_400.csv, Response status code: 404
+2026-02-13 09:36:48.701 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:36:48.706 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:36:48.708 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:36:48.711 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:36:48.717 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:36:48.724 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:36:48.727 +02:00 [INF] Executed ViewResult - view Index executed in 3.3245ms.
+2026-02-13 09:36:48.729 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 12.4567ms
+2026-02-13 09:36:48.742 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:36:48.744 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:36:48.744 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:36:48.747 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 45.7996ms
+2026-02-13 09:36:48.750 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:36:48.756 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:36:48.758 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:36:48.761 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:36:48.765 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:36:48.769 +02:00 [INF] Executed ViewResult - view Index executed in 3.4542ms.
+2026-02-13 09:36:48.771 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 9.7565ms
+2026-02-13 09:36:48.773 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:36:48.775 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:36:48.776 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 32.2179ms
+2026-02-13 09:36:48.864 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:36:48.864 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:36:48.873 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:36:48.877 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:36:48.879 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:36:48.881 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:36:48.882 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 18.0814ms
+2026-02-13 09:36:48.884 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 19.7815ms
+2026-02-13 09:36:48.889 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:36:48.894 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:37:15.536 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:37:15.541 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:37:15.543 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:37:15.545 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:37:15.549 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:37:15.553 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:37:15.559 +02:00 [INF] Executed ViewResult - view Index executed in 6.4298ms.
+2026-02-13 09:37:15.561 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 12.019ms
+2026-02-13 09:37:15.564 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:37:15.567 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:37:15.569 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 32.8541ms
+2026-02-13 09:37:15.601 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 09:37:15.755 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:37:15.757 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:37:15.758 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:37:15.761 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:37:15.764 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:37:15.767 +02:00 [INF] Executed ViewResult - view Index executed in 3.2895ms.
+2026-02-13 09:37:15.772 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 10.5581ms
+2026-02-13 09:37:15.775 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:37:15.777 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:37:15.779 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 177.6987ms
+2026-02-13 09:37:15.848 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:37:15.859 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:37:15.860 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:37:15.878 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:37:15.880 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:37:15.881 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:37:15.883 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 35.7139ms
+2026-02-13 09:37:15.885 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 26.2746ms
+2026-02-13 09:37:15.890 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:37:15.894 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:39:42.411 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.html?ide_webview_request_time=1770968382397 - null null
+2026-02-13 09:39:42.415 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:42.691 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:42.697 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.html?ide_webview_request_time=1770968382397 - 200 null text/html;charset=utf-8 285.5901ms
+2026-02-13 09:39:42.704 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.css - null null
+2026-02-13 09:39:42.705 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-bundle.js - null null
+2026-02-13 09:39:42.706 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.js - null null
+2026-02-13 09:39:42.706 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-13 09:39:42.709 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui.css - null null
+2026-02-13 09:39:42.714 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:42.717 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:42.721 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:42.725 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:42.730 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:42.735 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:42.739 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.js - 200 null application/javascript;charset=utf-8 33.1758ms
+2026-02-13 09:39:42.754 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:42.754 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:42.756 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui.css - 200 26248 text/css 46.8663ms
+2026-02-13 09:39:42.756 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:42.767 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-standalone-preset.js - 200 77848 text/javascript 60.3601ms
+2026-02-13 09:39:42.759 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.css - 200 152 text/css 54.8112ms
+2026-02-13 09:39:42.783 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:42.786 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-bundle.js - 200 424871 text/javascript 81.0007ms
+2026-02-13 09:39:43.381 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/v1/swagger.json - null null
+2026-02-13 09:39:43.385 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:43.438 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:39:43.444 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:43.445 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:43.447 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 8.2828ms
+2026-02-13 09:39:43.453 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 09:39:43.583 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - ContactManager.Web.Backend.Controllers.ContactsApiController.UploadCsv (ContactManager.Web). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action ContactManager.Web.Backend.Controllers.ContactsApiController.UploadCsv (ContactManager.Web) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ContactManager.Web.Config.ApplicationConfiguration.<>c.<<ConfigureSecurity>b__6_0>d.MoveNext() in E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\Config\ApplicationConfiguration.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-13 09:39:43.654 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 272.4122ms
+2026-02-13 09:39:50.941 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/websocket-test.html?ide_webview_request_time=1770968390934 - null null
+2026-02-13 09:39:50.957 +02:00 [INF] Sending file. Request path: '/websocket-test.html'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\websocket-test.html'
+2026-02-13 09:39:50.960 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/websocket-test.html?ide_webview_request_time=1770968390934 - 200 11461 text/html 18.3864ms
+2026-02-13 09:39:51.320 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:39:51.325 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:51.326 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:51.327 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.1563ms
+2026-02-13 09:39:51.332 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 09:39:58.790 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - null null
+2026-02-13 09:39:58.795 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:58.796 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:39:58.799 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:39:58.802 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:39:58.804 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:39:58.807 +02:00 [INF] Executed ViewResult - view Index executed in 2.7313ms.
+2026-02-13 09:39:58.809 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 7.7137ms
+2026-02-13 09:39:58.813 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:39:58.816 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:58.824 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - 200 null text/html; charset=utf-8 33.5596ms
+2026-02-13 09:39:58.841 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:39:58.846 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:39:58.854 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:58.858 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:58.859 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:58.860 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:58.861 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 20.6977ms
+2026-02-13 09:39:58.863 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 16.4855ms
+2026-02-13 09:39:58.870 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:39:58.875 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:39:59.039 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:39:59.043 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:39:59.044 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:39:59.046 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 6.292ms
+2026-02-13 09:39:59.052 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 09:40:28.079 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - null null
+2026-02-13 09:40:28.084 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:40:28.086 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:40:28.088 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:40:28.092 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:40:28.095 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:40:28.098 +02:00 [INF] Executed ViewResult - view Index executed in 3.5668ms.
+2026-02-13 09:40:28.101 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 9.1709ms
+2026-02-13 09:40:28.105 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:40:28.115 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:40:28.117 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:40:28.118 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:40:28.120 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - 200 null text/html; charset=utf-8 40.6986ms
+2026-02-13 09:40:28.130 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:40:28.135 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:40:28.141 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:40:28.143 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:40:28.144 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 404 0 null 26.778ms
+2026-02-13 09:40:28.145 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 404 0 null 27.5925ms
+2026-02-13 09:40:28.150 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/css/contact-manager.css, Response status code: 404
+2026-02-13 09:40:28.155 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/Frontend/js/contact-manager.js, Response status code: 404
+2026-02-13 09:40:28.204 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:40:28.208 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:40:28.209 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:40:28.210 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 6.5199ms
+2026-02-13 09:40:28.214 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 09:50:56.292 +02:00 [INF] Starting database initialization
+2026-02-13 09:50:56.470 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:50:56.605 +02:00 [INF] Starting database initialization
+2026-02-13 09:50:57.189 +02:00 [INF] Initializing SQLite database
+2026-02-13 09:50:57.207 +02:00 [INF] Found existing SQLite database, will recreate for clean state
+2026-02-13 09:50:57.210 +02:00 [INF] Existing SQLite database deleted successfully
+2026-02-13 09:50:57.970 +02:00 [INF] SQLite database and tables created successfully
+2026-02-13 09:50:57.972 +02:00 [INF] Database initialization completed in 1366ms
+2026-02-13 09:50:57.975 +02:00 [INF] Database initialization completed successfully
+2026-02-13 09:50:58.108 +02:00 [INF] User profile is available. Using 'C:\Users\Eugene\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-13 09:50:58.190 +02:00 [INF] Now listening on: http://localhost:5021
+2026-02-13 09:50:58.192 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 09:50:58.195 +02:00 [INF] Hosting environment: Development
+2026-02-13 09:50:58.196 +02:00 [INF] Content root path: E:\TestTask\Bits OrchestraTest Task\ContactManager.Web
+2026-02-13 09:51:06.639 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - null null
+2026-02-13 09:51:06.642 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - null null
+2026-02-13 09:51:06.656 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-02-13 09:51:06.690 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:51:06.690 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:51:06.772 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:06.772 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:06.803 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:51:06.803 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:51:06.811 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:51:06.817 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969066805 - null null
+2026-02-13 09:51:06.819 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:51:06.830 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:51:06.838 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:06.841 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:51:06.850 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:51:07.123 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:51:07.123 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:51:07.123 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:51:07.239 +02:00 [INF] Executed ViewResult - view Index executed in 117.9116ms.
+2026-02-13 09:51:07.239 +02:00 [INF] Executed ViewResult - view Index executed in 117.9021ms.
+2026-02-13 09:51:07.239 +02:00 [INF] Executed ViewResult - view Index executed in 120.0158ms.
+2026-02-13 09:51:07.247 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 437.5697ms
+2026-02-13 09:51:07.248 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 428.8638ms
+2026-02-13 09:51:07.262 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:07.264 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:51:07.256 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 409.3434ms
+2026-02-13 09:51:07.259 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:07.272 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:51:07.271 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:51:07.269 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:07.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:51:07.282 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - 200 null text/html; charset=utf-8 645.8136ms
+2026-02-13 09:51:07.282 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770968398784 - 200 null text/html; charset=utf-8 639.2981ms
+2026-02-13 09:51:07.287 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:51:07.302 +02:00 [INF] Sending file. Request path: '/Frontend/js/contact-manager.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\js\contact-manager.js'
+2026-02-13 09:51:07.302 +02:00 [INF] Sending file. Request path: '/Frontend/css/contact-manager.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\css\contact-manager.css'
+2026-02-13 09:51:07.311 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969066805 - 200 null text/html; charset=utf-8 494.0115ms
+2026-02-13 09:51:07.313 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 200 12446 text/javascript 37.3719ms
+2026-02-13 09:51:07.315 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 200 8031 text/css 44.4029ms
+2026-02-13 09:51:07.501 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:51:07.507 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:51:07.509 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:51:07.510 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 9.0826ms
+2026-02-13 09:51:07.517 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 09:51:27.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969087688 - null null
+2026-02-13 09:51:27.698 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:51:27.699 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:27.700 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:51:27.703 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:51:27.760 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:51:27.765 +02:00 [INF] Executed ViewResult - view Index executed in 5.1888ms.
+2026-02-13 09:51:27.767 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 64.2722ms
+2026-02-13 09:51:27.770 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:51:27.771 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:51:27.773 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969087688 - 200 null text/html; charset=utf-8 78.8076ms
+2026-02-13 09:51:27.855 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:51:27.860 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:51:27.861 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:51:27.863 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.2271ms
+2026-02-13 09:51:27.867 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 09:58:47.020 +02:00 [INF] Starting database initialization
+2026-02-13 09:58:47.125 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:58:47.234 +02:00 [INF] Starting database initialization
+2026-02-13 09:58:47.692 +02:00 [INF] Initializing SQLite database
+2026-02-13 09:58:47.705 +02:00 [INF] Found existing SQLite database, will recreate for clean state
+2026-02-13 09:58:47.708 +02:00 [INF] Existing SQLite database deleted successfully
+2026-02-13 09:58:48.369 +02:00 [INF] SQLite database and tables created successfully
+2026-02-13 09:58:48.372 +02:00 [INF] Database initialization completed in 1136ms
+2026-02-13 09:58:48.375 +02:00 [INF] Database initialization completed successfully
+2026-02-13 09:58:48.526 +02:00 [INF] User profile is available. Using 'C:\Users\Eugene\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-13 09:58:48.615 +02:00 [INF] Now listening on: http://localhost:5021
+2026-02-13 09:58:48.617 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 09:58:48.619 +02:00 [INF] Hosting environment: Development
+2026-02-13 09:58:48.621 +02:00 [INF] Content root path: E:\TestTask\Bits OrchestraTest Task\ContactManager.Web
+2026-02-13 09:58:57.093 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969537039 - null null
+2026-02-13 09:58:57.106 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-02-13 09:58:57.182 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:58:57.250 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:58:57.279 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 09:58:57.287 +02:00 [INF] Configuring SQLite database
+2026-02-13 09:58:57.521 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 09:58:57.640 +02:00 [INF] Executed ViewResult - view Index executed in 124.1055ms.
+2026-02-13 09:58:57.648 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 362.7157ms
+2026-02-13 09:58:57.652 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 09:58:57.654 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:58:57.656 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 09:58:57.656 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 09:58:57.666 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969537039 - 200 null text/html; charset=utf-8 574.9781ms
+2026-02-13 09:58:57.667 +02:00 [INF] The file /Frontend/css/contact-manager.css was not modified
+2026-02-13 09:58:57.674 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 304 null text/css 18.8305ms
+2026-02-13 09:58:57.677 +02:00 [INF] Sending file. Request path: '/Frontend/js/contact-manager.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\js\contact-manager.js'
+2026-02-13 09:58:57.683 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 200 12991 text/javascript 26.1607ms
+2026-02-13 09:58:57.731 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 09:58:57.736 +02:00 [INF] No cached response available for this request.
+2026-02-13 09:58:57.738 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 09:58:57.740 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 8.4243ms
+2026-02-13 09:58:57.746 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:01:15.378 +02:00 [INF] Starting database initialization
+2026-02-13 10:01:15.478 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:01:15.625 +02:00 [INF] Starting database initialization
+2026-02-13 10:01:16.196 +02:00 [INF] Initializing SQLite database
+2026-02-13 10:01:16.211 +02:00 [INF] Found existing SQLite database, will recreate for clean state
+2026-02-13 10:01:16.213 +02:00 [INF] Existing SQLite database deleted successfully
+2026-02-13 10:01:16.623 +02:00 [INF] SQLite database and tables created successfully
+2026-02-13 10:01:16.626 +02:00 [INF] Database initialization completed in 1000ms
+2026-02-13 10:01:16.631 +02:00 [INF] Database initialization completed successfully
+2026-02-13 10:01:16.806 +02:00 [INF] User profile is available. Using 'C:\Users\Eugene\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-13 10:01:16.915 +02:00 [INF] Now listening on: http://localhost:5021
+2026-02-13 10:01:16.917 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 10:01:16.919 +02:00 [INF] Hosting environment: Development
+2026-02-13 10:01:16.921 +02:00 [INF] Content root path: E:\TestTask\Bits OrchestraTest Task\ContactManager.Web
+2026-02-13 10:01:54.135 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969714073 - null null
+2026-02-13 10:01:54.148 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-02-13 10:01:54.173 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:01:54.198 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:01:54.220 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:01:54.224 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:01:54.524 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:01:54.627 +02:00 [INF] Executed ViewResult - view Index executed in 108.4708ms.
+2026-02-13 10:01:54.636 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 412.4041ms
+2026-02-13 10:01:54.639 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:01:54.642 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:01:54.644 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 10:01:54.645 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 10:01:54.654 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts?ide_webview_request_time=1770969714073 - 200 null text/html; charset=utf-8 521.0294ms
+2026-02-13 10:01:54.657 +02:00 [INF] The file /Frontend/js/contact-manager.js was not modified
+2026-02-13 10:01:54.658 +02:00 [INF] The file /Frontend/css/contact-manager.css was not modified
+2026-02-13 10:01:54.664 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 304 null text/javascript 20.3354ms
+2026-02-13 10:01:54.665 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 304 null text/css 19.3427ms
+2026-02-13 10:01:54.750 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:01:54.756 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:01:54.758 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:01:54.759 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 8.8547ms
+2026-02-13 10:01:54.764 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:03:58.214 +02:00 [INF] Starting database initialization
+2026-02-13 10:03:58.301 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:03:58.426 +02:00 [INF] Starting database initialization
+2026-02-13 10:03:58.994 +02:00 [INF] Initializing SQLite database
+2026-02-13 10:03:59.008 +02:00 [INF] Found existing SQLite database, will recreate for clean state
+2026-02-13 10:03:59.010 +02:00 [INF] Existing SQLite database deleted successfully
+2026-02-13 10:03:59.564 +02:00 [INF] SQLite database and tables created successfully
+2026-02-13 10:03:59.567 +02:00 [INF] Database initialization completed in 1140ms
+2026-02-13 10:03:59.577 +02:00 [INF] Database initialization completed successfully
+2026-02-13 10:03:59.733 +02:00 [INF] User profile is available. Using 'C:\Users\Eugene\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-13 10:03:59.866 +02:00 [INF] Now listening on: http://localhost:5021
+2026-02-13 10:03:59.966 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 10:03:59.968 +02:00 [INF] Hosting environment: Development
+2026-02-13 10:03:59.970 +02:00 [INF] Content root path: E:\TestTask\Bits OrchestraTest Task\ContactManager.Web
+2026-02-13 10:04:35.944 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5021/Contacts/Upload - multipart/form-data; boundary=d2e6d23d-6c80-4cac-920e-ca4d372e2c15 492
+2026-02-13 10:04:35.959 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-02-13 10:04:36.088 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 10:04:36.143 +02:00 [INF] Route matched with {action = "Upload", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:04:36.148 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:04:36.701 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 10:04:36.716 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web) in 565.8711ms
+2026-02-13 10:04:36.722 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 10:04:36.732 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5021/Contacts/Upload - 302 0 null 789.8269ms
+2026-02-13 10:04:36.740 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - multipart/form-data; boundary=d2e6d23d-6c80-4cac-920e-ca4d372e2c15 null
+2026-02-13 10:04:36.747 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:04:36.753 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:04:36.760 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:04:36.764 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:04:37.010 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:04:37.168 +02:00 [INF] Executed ViewResult - view Index executed in 162.2772ms.
+2026-02-13 10:04:37.171 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 407.6527ms
+2026-02-13 10:04:37.174 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:04:37.175 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:04:37.178 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 438.9101ms
+2026-02-13 10:05:31.473 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5021/Contacts/Upload - multipart/form-data; boundary=40d18ffb-9d68-4559-9f1e-098c1fda027d 493
+2026-02-13 10:05:31.480 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 10:05:31.482 +02:00 [INF] Route matched with {action = "Upload", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:05:31.487 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:05:31.580 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 10:05:31.583 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web) in 98.2448ms
+2026-02-13 10:05:31.585 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 10:05:31.587 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5021/Contacts/Upload - 302 0 null 113.2529ms
+2026-02-13 10:05:31.590 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - multipart/form-data; boundary=40d18ffb-9d68-4559-9f1e-098c1fda027d null
+2026-02-13 10:05:31.594 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:05:31.596 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:05:31.597 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:05:31.600 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:05:31.603 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:05:31.613 +02:00 [INF] Executed ViewResult - view Index executed in 9.4571ms.
+2026-02-13 10:05:31.615 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 15.6437ms
+2026-02-13 10:05:31.617 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:05:31.619 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:05:31.620 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 29.6143ms
+2026-02-13 10:06:41.139 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/templates/sample_contacts_400.csv - null null
+2026-02-13 10:06:41.153 +02:00 [INF] Sending file. Request path: '/templates/sample_contacts_400.csv'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\templates\sample_contacts_400.csv'
+2026-02-13 10:06:41.155 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/templates/sample_contacts_400.csv - 200 16340 text/csv 16.7538ms
+2026-02-13 10:07:10.305 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Home/Privacy - null null
+2026-02-13 10:07:10.310 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:10.313 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 10:07:10.317 +02:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 10:07:10.322 +02:00 [INF] Executing ViewResult, running view Privacy.
+2026-02-13 10:07:10.422 +02:00 [INF] Executed ViewResult - view Privacy executed in 100.5448ms.
+2026-02-13 10:07:10.424 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web) in 104.0126ms
+2026-02-13 10:07:10.427 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 10:07:10.429 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:10.431 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Home/Privacy - 200 null text/html; charset=utf-8 126.001ms
+2026-02-13 10:07:10.619 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:07:10.623 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:10.625 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:10.626 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.0636ms
+2026-02-13 10:07:10.632 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:07:14.188 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Home/Privacy - null null
+2026-02-13 10:07:14.195 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:14.196 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 10:07:14.198 +02:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 10:07:14.201 +02:00 [INF] Executing ViewResult, running view Privacy.
+2026-02-13 10:07:14.205 +02:00 [INF] Executed ViewResult - view Privacy executed in 3.449ms.
+2026-02-13 10:07:14.209 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web) in 7.8379ms
+2026-02-13 10:07:14.212 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 10:07:14.214 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:14.217 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Home/Privacy - 200 null text/html; charset=utf-8 28.1969ms
+2026-02-13 10:07:14.281 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:07:14.285 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:14.286 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:14.287 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 5.842ms
+2026-02-13 10:07:14.293 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:07:21.934 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 10:07:21.940 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:21.942 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:07:21.944 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:07:21.949 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:07:21.953 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:07:21.957 +02:00 [INF] Executed ViewResult - view Index executed in 4.8445ms.
+2026-02-13 10:07:21.960 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 11.5922ms
+2026-02-13 10:07:21.963 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:07:21.966 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:21.968 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 33.4019ms
+2026-02-13 10:07:21.974 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 10:07:21.975 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 10:07:21.982 +02:00 [INF] The file /Frontend/css/contact-manager.css was not modified
+2026-02-13 10:07:21.984 +02:00 [INF] The file /Frontend/js/contact-manager.js was not modified
+2026-02-13 10:07:21.985 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 304 null text/css 10.9747ms
+2026-02-13 10:07:21.987 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 304 null text/javascript 12.0849ms
+2026-02-13 10:07:22.145 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:07:22.149 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:22.150 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:22.151 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 6.1284ms
+2026-02-13 10:07:22.155 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:07:23.779 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ - null null
+2026-02-13 10:07:23.783 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:23.784 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 10:07:23.794 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 10:07:23.802 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 10:07:23.804 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web) in 2.8611ms
+2026-02-13 10:07:23.806 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 10:07:23.808 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:23.810 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ - 302 0 null 30.5733ms
+2026-02-13 10:07:23.816 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 10:07:23.820 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:23.821 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:07:23.822 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:07:23.825 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:07:23.828 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:07:23.831 +02:00 [INF] Executed ViewResult - view Index executed in 3.2205ms.
+2026-02-13 10:07:23.833 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 8.5739ms
+2026-02-13 10:07:23.836 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:07:23.838 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:23.839 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 23.7205ms
+2026-02-13 10:07:23.988 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:07:23.993 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:23.994 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:23.995 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.0369ms
+2026-02-13 10:07:23.999 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:07:25.565 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 10:07:25.570 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:25.572 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:07:25.574 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:07:25.577 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:07:25.581 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:07:25.585 +02:00 [INF] Executed ViewResult - view Index executed in 4.1073ms.
+2026-02-13 10:07:25.588 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 10.8256ms
+2026-02-13 10:07:25.591 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:07:25.593 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:25.597 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 31.9213ms
+2026-02-13 10:07:25.729 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:07:25.733 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:07:25.735 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:07:25.736 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.0089ms
+2026-02-13 10:07:25.742 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:09:21.831 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5021/Contacts/Upload - multipart/form-data; boundary=----WebKitFormBoundaryc0VDLhohU9vLr2hn 16799
+2026-02-13 10:09:21.837 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 10:09:21.839 +02:00 [INF] Route matched with {action = "Upload", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:09:21.843 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:09:22.651 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 10:09:22.654 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web) in 811.0102ms
+2026-02-13 10:09:22.655 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 10:09:22.657 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5021/Contacts/Upload - 302 0 null 825.3749ms
+2026-02-13 10:09:22.663 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 10:09:22.667 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:09:22.668 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:09:22.669 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:09:22.672 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:09:22.680 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:09:22.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 10:09:22.698 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:09:22.699 +02:00 [INF] Executed ViewResult - view Index executed in 18.9079ms.
+2026-02-13 10:09:22.700 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:09:22.703 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 31.1451ms
+2026-02-13 10:09:22.703 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:09:22.705 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:09:22.708 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:09:22.709 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:09:22.712 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 49.1191ms
+2026-02-13 10:09:22.717 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:09:22.725 +02:00 [INF] Executed ViewResult - view Index executed in 7.4844ms.
+2026-02-13 10:09:22.728 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 20.362ms
+2026-02-13 10:09:22.731 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:09:22.733 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:09:22.735 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 41.0587ms
+2026-02-13 10:09:22.747 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 10:09:22.750 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 10:09:22.752 +02:00 [INF] The file /Frontend/css/contact-manager.css was not modified
+2026-02-13 10:09:22.755 +02:00 [INF] The file /Frontend/js/contact-manager.js was not modified
+2026-02-13 10:09:22.757 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 304 null text/css 9.5622ms
+2026-02-13 10:09:22.758 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 304 null text/javascript 8.5889ms
+2026-02-13 10:09:24.520 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:09:24.525 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:09:24.526 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:09:24.527 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 6.9887ms
+2026-02-13 10:09:24.533 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 10:11:53.108 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 10:11:53.112 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:11:53.114 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:11:53.116 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:11:53.119 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:11:53.127 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:11:53.139 +02:00 [INF] Executed ViewResult - view Index executed in 11.2091ms.
+2026-02-13 10:11:53.141 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 21.4766ms
+2026-02-13 10:11:53.143 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:11:53.145 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:11:53.147 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 39.3777ms
+2026-02-13 10:11:53.151 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 10:11:53.156 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:11:53.157 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:11:53.158 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 10:11:53.161 +02:00 [INF] Configuring SQLite database
+2026-02-13 10:11:53.165 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 10:11:53.171 +02:00 [INF] Executed ViewResult - view Index executed in 5.8798ms.
+2026-02-13 10:11:53.173 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 12.5049ms
+2026-02-13 10:11:53.175 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 10:11:53.177 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:11:53.178 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 26.5967ms
+2026-02-13 10:11:53.264 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 10:11:53.277 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 10:11:53.284 +02:00 [INF] The file /Frontend/css/contact-manager.css was not modified
+2026-02-13 10:11:53.289 +02:00 [INF] The file /Frontend/js/contact-manager.js was not modified
+2026-02-13 10:11:53.291 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 304 null text/css 26.4188ms
+2026-02-13 10:11:53.293 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 304 null text/javascript 15.1412ms
+2026-02-13 10:11:55.365 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 10:11:55.370 +02:00 [INF] No cached response available for this request.
+2026-02-13 10:11:55.371 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 10:11:55.373 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.5988ms
+2026-02-13 10:11:55.378 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:21:26.525 +02:00 [INF] Starting database initialization
+2026-02-13 18:21:26.680 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:21:26.823 +02:00 [INF] Starting database initialization
+2026-02-13 18:21:27.372 +02:00 [INF] Initializing SQLite database
+2026-02-13 18:21:27.387 +02:00 [INF] Found existing SQLite database, will recreate for clean state
+2026-02-13 18:21:27.524 +02:00 [INF] Existing SQLite database deleted successfully
+2026-02-13 18:21:27.880 +02:00 [INF] SQLite database and tables created successfully
+2026-02-13 18:21:27.883 +02:00 [INF] Database initialization completed in 1058ms
+2026-02-13 18:21:27.887 +02:00 [INF] Database initialization completed successfully
+2026-02-13 18:21:28.017 +02:00 [INF] User profile is available. Using 'C:\Users\Eugene\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-13 18:21:28.121 +02:00 [INF] Now listening on: http://localhost:5021
+2026-02-13 18:21:28.123 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 18:21:28.124 +02:00 [INF] Hosting environment: Development
+2026-02-13 18:21:28.125 +02:00 [INF] Content root path: E:\TestTask\Bits OrchestraTest Task\ContactManager.Web
+2026-02-13 18:22:44.106 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ - null null
+2026-02-13 18:22:44.123 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-02-13 18:22:44.166 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:44.219 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:22:44.253 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 18:22:44.293 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 18:22:44.299 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web) in 37.5939ms
+2026-02-13 18:22:44.305 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:22:44.307 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:44.313 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ - 302 0 null 208.9094ms
+2026-02-13 18:22:44.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:22:44.328 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:44.333 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:22:44.349 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:22:44.353 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:22:44.836 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:22:44.971 +02:00 [INF] Executed ViewResult - view Index executed in 145.2898ms.
+2026-02-13 18:22:44.973 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 621.1818ms
+2026-02-13 18:22:44.976 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:22:44.978 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:44.993 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-02-13 18:22:44.994 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 671.3932ms
+2026-02-13 18:22:44.996 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - null null
+2026-02-13 18:22:45.001 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 18:22:45.002 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - null null
+2026-02-13 18:22:45.003 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-02-13 18:22:45.012 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-02-13 18:22:45.023 +02:00 [INF] The file /ContactManager.Web.styles.css was not modified
+2026-02-13 18:22:45.023 +02:00 [INF] The file /css/site.css was not modified
+2026-02-13 18:22:45.032 +02:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2026-02-13 18:22:45.036 +02:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-02-13 18:22:45.038 +02:00 [INF] Sending file. Request path: '/Frontend/css/contact-manager.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\css\contact-manager.css'
+2026-02-13 18:22:45.041 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-02-13 18:22:45.042 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - 304 null text/css 45.8813ms
+2026-02-13 18:22:45.044 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 50.6158ms
+2026-02-13 18:22:45.047 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - 304 null text/javascript 44.6976ms
+2026-02-13 18:22:45.050 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 47.0499ms
+2026-02-13 18:22:45.051 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 200 8031 text/css 50.0589ms
+2026-02-13 18:22:45.053 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 41.2877ms
+2026-02-13 18:22:45.058 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 18:22:45.075 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-02-13 18:22:45.087 +02:00 [INF] Sending file. Request path: '/Frontend/js/contact-manager.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\js\contact-manager.js'
+2026-02-13 18:22:45.090 +02:00 [INF] The file /js/site.js was not modified
+2026-02-13 18:22:45.091 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 200 12991 text/javascript 33.0621ms
+2026-02-13 18:22:45.093 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 17.6935ms
+2026-02-13 18:22:45.272 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:22:45.280 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:45.283 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:45.285 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 12.7208ms
+2026-02-13 18:22:45.294 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:22:48.901 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger - null null
+2026-02-13 18:22:48.907 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:48.909 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:48.912 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger - 301 0 null 10.6359ms
+2026-02-13 18:22:48.921 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.html - null null
+2026-02-13 18:22:48.929 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.018 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:49.020 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.html - 200 null text/html;charset=utf-8 98.3362ms
+2026-02-13 18:22:49.030 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.css - null null
+2026-02-13 18:22:49.030 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui.css - null null
+2026-02-13 18:22:49.030 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-bundle.js - null null
+2026-02-13 18:22:49.031 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-13 18:22:49.031 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.js - null null
+2026-02-13 18:22:49.036 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.040 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.044 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.049 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.053 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.059 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:49.059 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:49.060 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:49.060 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.css - 304 null null 30.5263ms
+2026-02-13 18:22:49.060 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:49.062 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui.css - 304 null null 32.3006ms
+2026-02-13 18:22:49.064 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.js - 304 null null 33.0043ms
+2026-02-13 18:22:49.070 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-standalone-preset.js - 304 null null 39.4613ms
+2026-02-13 18:22:49.073 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:49.086 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-bundle.js - 304 null null 56.2159ms
+2026-02-13 18:22:49.351 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/v1/swagger.json - null null
+2026-02-13 18:22:49.356 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.389 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:22:49.393 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:22:49.395 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:22:49.397 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 8.0053ms
+2026-02-13 18:22:49.403 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:22:49.485 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - ContactManager.Web.Backend.Controllers.ContactsApiController.UploadCsv (ContactManager.Web). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action ContactManager.Web.Backend.Controllers.ContactsApiController.UploadCsv (ContactManager.Web) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ContactManager.Web.Config.ApplicationConfiguration.<>c.<<ConfigureSecurity>b__6_0>d.MoveNext() in E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\Config\ApplicationConfiguration.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-13 18:22:49.575 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 224.3829ms
+2026-02-13 18:31:19.406 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:31:19.411 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:31:19.412 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:31:19.414 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:31:19.417 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:31:19.483 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:31:19.493 +02:00 [INF] Executed ViewResult - view Index executed in 10.1989ms.
+2026-02-13 18:31:19.496 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 79.4877ms
+2026-02-13 18:31:19.498 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:31:19.500 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:31:19.502 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 95.7912ms
+2026-02-13 18:31:19.614 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:31:19.617 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:31:19.618 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:31:19.619 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 5.5011ms
+2026-02-13 18:31:19.626 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:31:54.852 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5021/Contacts/Upload - multipart/form-data; boundary=----WebKitFormBoundaryekBY9aqYrTvHJB8X 16799
+2026-02-13 18:31:54.858 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 18:31:54.871 +02:00 [INF] Route matched with {action = "Upload", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:31:54.877 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:31:55.693 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 18:31:55.697 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web) in 822.5976ms
+2026-02-13 18:31:55.700 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Upload (ContactManager.Web)'
+2026-02-13 18:31:55.703 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5021/Contacts/Upload - 302 0 null 850.4728ms
+2026-02-13 18:31:55.710 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:31:55.713 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:31:55.715 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:31:55.716 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:31:55.720 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:31:55.739 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:31:55.758 +02:00 [INF] Executed ViewResult - view Index executed in 18.351ms.
+2026-02-13 18:31:55.760 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 39.9242ms
+2026-02-13 18:31:55.762 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:31:55.764 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:31:55.766 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 55.5712ms
+2026-02-13 18:31:55.772 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:31:55.777 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:31:55.778 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:31:55.780 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:31:55.788 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:31:55.807 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:31:55.818 +02:00 [INF] Executed ViewResult - view Index executed in 10.8239ms.
+2026-02-13 18:31:55.821 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 32.5425ms
+2026-02-13 18:31:55.824 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:31:55.826 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:31:55.828 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 55.7853ms
+2026-02-13 18:31:55.843 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 18:31:55.849 +02:00 [INF] The file /Frontend/css/contact-manager.css was not modified
+2026-02-13 18:31:55.849 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 18:31:55.851 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 304 null text/css 7.6322ms
+2026-02-13 18:31:55.857 +02:00 [INF] The file /Frontend/js/contact-manager.js was not modified
+2026-02-13 18:31:55.864 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 304 null text/javascript 14.6182ms
+2026-02-13 18:31:57.886 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:31:57.891 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:31:57.892 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:31:57.894 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.4523ms
+2026-02-13 18:31:57.898 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:32:15.631 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:32:15.636 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:32:15.637 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:32:15.639 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:32:15.644 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:32:15.665 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:32:15.694 +02:00 [INF] Executed ViewResult - view Index executed in 29.5445ms.
+2026-02-13 18:32:15.706 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 62.0687ms
+2026-02-13 18:32:15.714 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:32:15.718 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:32:15.721 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 89.9577ms
+2026-02-13 18:32:17.550 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:32:17.555 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:32:17.557 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:32:17.560 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 10.3247ms
+2026-02-13 18:32:17.566 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:42:23.437 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Home/Privacy - null null
+2026-02-13 18:42:23.443 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:23.445 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 18:42:23.449 +02:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 18:42:23.459 +02:00 [INF] Executing ViewResult, running view Privacy.
+2026-02-13 18:42:23.470 +02:00 [INF] Executed ViewResult - view Privacy executed in 13.1731ms.
+2026-02-13 18:42:23.473 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web) in 17.0566ms
+2026-02-13 18:42:23.476 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Privacy (ContactManager.Web)'
+2026-02-13 18:42:23.479 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:23.483 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Home/Privacy - 200 null text/html; charset=utf-8 45.5793ms
+2026-02-13 18:42:23.687 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:42:23.691 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:23.693 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:23.694 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 7.3399ms
+2026-02-13 18:42:23.703 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:42:25.343 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:42:25.347 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:25.349 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:25.352 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:42:25.356 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:42:25.373 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:42:25.380 +02:00 [INF] Executed ViewResult - view Index executed in 7.2485ms.
+2026-02-13 18:42:25.383 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 27.4939ms
+2026-02-13 18:42:25.386 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:25.387 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:25.389 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 45.938ms
+2026-02-13 18:42:25.402 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 18:42:25.407 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 18:42:25.407 +02:00 [INF] The file /Frontend/css/contact-manager.css was not modified
+2026-02-13 18:42:25.412 +02:00 [INF] The file /Frontend/js/contact-manager.js was not modified
+2026-02-13 18:42:25.413 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 304 null text/css 11.1028ms
+2026-02-13 18:42:25.415 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 304 null text/javascript 8.3513ms
+2026-02-13 18:42:27.265 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:42:27.270 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:27.272 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:27.274 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 8.8854ms
+2026-02-13 18:42:27.279 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:42:27.363 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ - null null
+2026-02-13 18:42:27.367 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:27.370 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:42:27.372 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 18:42:27.375 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 18:42:27.377 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web) in 2.11ms
+2026-02-13 18:42:27.382 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:42:27.384 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:27.385 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ - 302 0 null 22.198ms
+2026-02-13 18:42:27.391 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:42:27.396 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:27.397 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:27.399 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:42:27.403 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:42:27.407 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:42:27.413 +02:00 [INF] Executed ViewResult - view Index executed in 5.8227ms.
+2026-02-13 18:42:27.416 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 13.0199ms
+2026-02-13 18:42:27.419 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:27.422 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:27.424 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 32.3911ms
+2026-02-13 18:42:29.262 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ - null null
+2026-02-13 18:42:29.267 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:29.270 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:42:29.272 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 18:42:29.276 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 18:42:29.279 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web) in 3.2206ms
+2026-02-13 18:42:29.284 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:42:29.286 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:29.288 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ - 302 0 null 26.0561ms
+2026-02-13 18:42:29.291 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:42:29.298 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:42:29.310 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:29.314 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:29.316 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:29.318 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:29.319 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 28.1816ms
+2026-02-13 18:42:29.322 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:42:29.327 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:42:29.331 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:42:29.343 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:42:29.352 +02:00 [INF] Executed ViewResult - view Index executed in 9.407ms.
+2026-02-13 18:42:29.354 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 22.8595ms
+2026-02-13 18:42:29.356 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:29.358 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:29.359 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 60.9449ms
+2026-02-13 18:42:30.690 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:42:30.694 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:30.696 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:30.698 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:42:30.702 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:42:30.710 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:42:30.716 +02:00 [INF] Executed ViewResult - view Index executed in 6.6641ms.
+2026-02-13 18:42:30.718 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 16.7591ms
+2026-02-13 18:42:30.720 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:30.722 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:30.725 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 35.0578ms
+2026-02-13 18:42:32.423 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ - null null
+2026-02-13 18:42:32.427 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:32.428 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:42:32.431 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactManager.Web.Controllers.HomeController (ContactManager.Web).
+2026-02-13 18:42:32.436 +02:00 [INF] Executing RedirectResult, redirecting to /Contacts.
+2026-02-13 18:42:32.439 +02:00 [INF] Executed action ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web) in 3.2635ms
+2026-02-13 18:42:32.442 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.HomeController.Index (ContactManager.Web)'
+2026-02-13 18:42:32.443 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:32.447 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ - 302 0 null 23.3959ms
+2026-02-13 18:42:32.452 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:42:32.456 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:32.457 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:32.459 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:42:32.462 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:42:32.469 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:42:32.479 +02:00 [INF] Executed ViewResult - view Index executed in 10.3901ms.
+2026-02-13 18:42:32.485 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 22.4815ms
+2026-02-13 18:42:32.490 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:32.492 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:32.494 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 41.8415ms
+2026-02-13 18:42:34.609 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:42:34.615 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:34.617 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:34.619 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:42:34.623 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:42:34.630 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:42:34.642 +02:00 [INF] Executed ViewResult - view Index executed in 11.5146ms.
+2026-02-13 18:42:34.645 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 21.4689ms
+2026-02-13 18:42:34.648 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:42:34.650 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:34.652 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 42.7165ms
+2026-02-13 18:42:36.941 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:42:37.027 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:42:37.030 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:42:37.031 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 90.7913ms
+2026-02-13 18:42:37.039 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:43:52.896 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:43:52.900 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:43:52.902 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:43:52.904 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:43:52.907 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:43:52.911 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:43:52.917 +02:00 [INF] Executed ViewResult - view Index executed in 5.1291ms.
+2026-02-13 18:43:52.918 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 11.5486ms
+2026-02-13 18:43:52.921 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:43:52.926 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:43:52.928 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 31.9694ms
+2026-02-13 18:43:52.937 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-02-13 18:43:52.942 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-02-13 18:43:52.947 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - null null
+2026-02-13 18:43:52.948 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 18:43:52.948 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - null null
+2026-02-13 18:43:52.949 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-02-13 18:43:52.957 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\css\site.css'
+2026-02-13 18:43:52.957 +02:00 [INF] Sending file. Request path: '/ContactManager.Web.styles.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\obj\Debug\net8.0\scopedcss\bundle\ContactManager.Web.styles.css'
+2026-02-13 18:43:52.961 +02:00 [INF] Sending file. Request path: '/Frontend/css/contact-manager.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\css\contact-manager.css'
+2026-02-13 18:43:52.969 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 26.7872ms
+2026-02-13 18:43:52.971 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - 200 1136 text/css 23.086ms
+2026-02-13 18:43:52.973 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 200 8031 text/css 25.0097ms
+2026-02-13 18:43:52.977 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-02-13 18:43:52.981 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 18:43:52.989 +02:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\js\site.js'
+2026-02-13 18:43:52.992 +02:00 [INF] Sending file. Request path: '/Frontend/js/contact-manager.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\js\contact-manager.js'
+2026-02-13 18:43:52.993 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 16.5947ms
+2026-02-13 18:43:52.995 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 200 12991 text/javascript 14.33ms
+2026-02-13 18:43:53.240 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-02-13 18:43:53.243 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 305.5095ms
+2026-02-13 18:43:53.252 +02:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-02-13 18:43:53.254 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 306.2069ms
+2026-02-13 18:43:53.281 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-02-13 18:43:53.284 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 334.923ms
+2026-02-13 18:44:02.513 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:44:02.517 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:44:02.519 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:44:02.520 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:44:02.523 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:44:02.529 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:44:02.535 +02:00 [INF] Executed ViewResult - view Index executed in 5.7461ms.
+2026-02-13 18:44:02.540 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 16.7312ms
+2026-02-13 18:44:02.543 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:44:02.545 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:44:02.546 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 33.097ms
+2026-02-13 18:44:02.552 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-02-13 18:44:02.557 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-02-13 18:44:02.559 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - null null
+2026-02-13 18:44:02.563 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-02-13 18:44:02.563 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 18:44:02.565 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\css\site.css'
+2026-02-13 18:44:02.579 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 22.0158ms
+2026-02-13 18:44:02.566 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-02-13 18:44:02.571 +02:00 [INF] Sending file. Request path: '/ContactManager.Web.styles.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\obj\Debug\net8.0\scopedcss\bundle\ContactManager.Web.styles.css'
+2026-02-13 18:44:02.572 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 20.4702ms
+2026-02-13 18:44:02.578 +02:00 [INF] Sending file. Request path: '/Frontend/css/contact-manager.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\css\contact-manager.css'
+2026-02-13 18:44:02.566 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - null null
+2026-02-13 18:44:02.584 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 18:44:02.590 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-02-13 18:44:02.608 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 42.0792ms
+2026-02-13 18:44:02.595 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-02-13 18:44:02.597 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 200 8031 text/css 34.6158ms
+2026-02-13 18:44:02.602 +02:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-02-13 18:44:02.606 +02:00 [INF] Sending file. Request path: '/Frontend/js/contact-manager.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\js\contact-manager.js'
+2026-02-13 18:44:02.590 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - 200 1136 text/css 30.9224ms
+2026-02-13 18:44:02.617 +02:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\js\site.js'
+2026-02-13 18:44:02.622 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 56.1245ms
+2026-02-13 18:44:02.624 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 200 12991 text/javascript 39.6143ms
+2026-02-13 18:44:02.629 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 33.8623ms
+2026-02-13 18:44:34.512 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:44:34.515 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:44:34.517 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:44:34.519 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:44:34.522 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:44:34.526 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:44:34.533 +02:00 [INF] Executed ViewResult - view Index executed in 6.5167ms.
+2026-02-13 18:44:34.535 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 13.1498ms
+2026-02-13 18:44:34.540 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:44:34.546 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:44:34.548 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 36.1805ms
+2026-02-13 18:44:34.554 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-02-13 18:44:34.557 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-02-13 18:44:34.560 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - null null
+2026-02-13 18:44:34.563 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 18:44:34.564 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - null null
+2026-02-13 18:44:34.565 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-02-13 18:44:34.567 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-02-13 18:44:34.586 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 31.7994ms
+2026-02-13 18:44:34.574 +02:00 [INF] Sending file. Request path: '/ContactManager.Web.styles.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\obj\Debug\net8.0\scopedcss\bundle\ContactManager.Web.styles.css'
+2026-02-13 18:44:34.577 +02:00 [INF] Sending file. Request path: '/Frontend/css/contact-manager.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\css\contact-manager.css'
+2026-02-13 18:44:34.581 +02:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-02-13 18:44:34.584 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-02-13 18:44:34.571 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\css\site.css'
+2026-02-13 18:44:34.590 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-02-13 18:44:34.592 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - 200 1136 text/css 31.5635ms
+2026-02-13 18:44:34.593 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 200 8031 text/css 29.8332ms
+2026-02-13 18:44:34.595 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 30.5435ms
+2026-02-13 18:44:34.597 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 32.1293ms
+2026-02-13 18:44:34.598 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 40.7677ms
+2026-02-13 18:44:34.602 +02:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\js\site.js'
+2026-02-13 18:44:34.619 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 18:44:34.620 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 30.3183ms
+2026-02-13 18:44:34.625 +02:00 [INF] Sending file. Request path: '/Frontend/js/contact-manager.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\js\contact-manager.js'
+2026-02-13 18:44:34.630 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 200 12991 text/javascript 11.2071ms
+2026-02-13 18:44:46.435 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Contacts - null null
+2026-02-13 18:44:46.439 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:44:46.440 +02:00 [INF] Executing endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:44:46.442 +02:00 [INF] Route matched with {action = "Index", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContactManager.Web.Controllers.ContactsController (ContactManager.Web).
+2026-02-13 18:44:46.447 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:44:46.454 +02:00 [INF] Executing ViewResult, running view Index.
+2026-02-13 18:44:46.460 +02:00 [INF] Executed ViewResult - view Index executed in 5.1531ms.
+2026-02-13 18:44:46.462 +02:00 [INF] Executed action ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web) in 15.5605ms
+2026-02-13 18:44:46.467 +02:00 [INF] Executed endpoint 'ContactManager.Web.Controllers.ContactsController.Index (ContactManager.Web)'
+2026-02-13 18:44:46.469 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:44:46.472 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Contacts - 200 null text/html; charset=utf-8 37.1955ms
+2026-02-13 18:44:46.479 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-02-13 18:44:46.482 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-02-13 18:44:46.487 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - null null
+2026-02-13 18:44:46.488 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - null null
+2026-02-13 18:44:46.489 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - null null
+2026-02-13 18:44:46.491 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-02-13 18:44:46.498 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-02-13 18:44:46.501 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\css\site.css'
+2026-02-13 18:44:46.506 +02:00 [INF] Sending file. Request path: '/ContactManager.Web.styles.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\obj\Debug\net8.0\scopedcss\bundle\ContactManager.Web.styles.css'
+2026-02-13 18:44:46.509 +02:00 [INF] Sending file. Request path: '/Frontend/css/contact-manager.css'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\css\contact-manager.css'
+2026-02-13 18:44:46.514 +02:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-02-13 18:44:46.519 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-02-13 18:44:46.522 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 42.4335ms
+2026-02-13 18:44:46.524 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 41.8272ms
+2026-02-13 18:44:46.526 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/ContactManager.Web.styles.css?v=D0W8AQKgf4DXqaqj5rDngk6jmdgqmFgQx74xdKbRzcg - 200 1136 text/css 39.2093ms
+2026-02-13 18:44:46.528 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/css/contact-manager.css - 200 8031 text/css 39.4759ms
+2026-02-13 18:44:46.529 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 39.9295ms
+2026-02-13 18:44:46.531 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 40.2663ms
+2026-02-13 18:44:46.536 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-02-13 18:44:46.541 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - null null
+2026-02-13 18:44:46.560 +02:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\js\site.js'
+2026-02-13 18:44:46.565 +02:00 [INF] Sending file. Request path: '/Frontend/js/contact-manager.js'. Physical path: 'E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\wwwroot\Frontend\js\contact-manager.js'
+2026-02-13 18:44:46.566 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 30.7703ms
+2026-02-13 18:44:46.569 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/Frontend/js/contact-manager.js - 200 12991 text/javascript 28.258ms
+2026-02-13 18:46:04.210 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.html - null null
+2026-02-13 18:46:04.214 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.216 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:46:04.217 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.html - 304 null null 6.9618ms
+2026-02-13 18:46:04.238 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui.css - null null
+2026-02-13 18:46:04.239 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.css - null null
+2026-02-13 18:46:04.241 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-bundle.js - null null
+2026-02-13 18:46:04.242 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/index.js - null null
+2026-02-13 18:46:04.243 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-13 18:46:04.246 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.250 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.253 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.256 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.260 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.261 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:46:04.263 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:46:04.264 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:46:04.266 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:46:04.267 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:46:04.275 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-standalone-preset.js - 304 null null 32.5563ms
+2026-02-13 18:46:04.269 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.css - 304 null null 29.9634ms
+2026-02-13 18:46:04.270 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui-bundle.js - 304 null null 28.8606ms
+2026-02-13 18:46:04.272 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/index.js - 304 null null 30.3459ms
+2026-02-13 18:46:04.268 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/swagger-ui.css - 304 null null 29.9621ms
+2026-02-13 18:46:04.386 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/swagger/v1/swagger.json - null null
+2026-02-13 18:46:04.390 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.405 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5021/@vite/client - null null
+2026-02-13 18:46:04.405 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - ContactManager.Web.Backend.Controllers.ContactsApiController.UploadCsv (ContactManager.Web). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action ContactManager.Web.Backend.Controllers.ContactsApiController.UploadCsv (ContactManager.Web) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ContactManager.Web.Config.ApplicationConfiguration.<>c.<<ConfigureSecurity>b__6_0>d.MoveNext() in E:\TestTask\Bits OrchestraTest Task\ContactManager.Web\Config\ApplicationConfiguration.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-13 18:46:04.409 +02:00 [INF] No cached response available for this request.
+2026-02-13 18:46:04.422 +02:00 [INF] The response could not be cached for this request.
+2026-02-13 18:46:04.423 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/@vite/client - 404 0 null 18.7204ms
+2026-02-13 18:46:04.425 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5021/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 39.6022ms
+2026-02-13 18:46:04.428 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5021/@vite/client, Response status code: 404
+2026-02-13 18:50:00.382 +02:00 [INF] Starting database initialization
+2026-02-13 18:50:00.601 +02:00 [INF] Configuring SQLite database
+2026-02-13 18:50:00.844 +02:00 [INF] Starting database initialization
+2026-02-13 18:50:01.816 +02:00 [INF] Initializing SQLite database
+2026-02-13 18:50:01.842 +02:00 [INF] Found existing SQLite database, will recreate for clean state
+2026-02-13 18:50:02.016 +02:00 [INF] Existing SQLite database deleted successfully
+2026-02-13 18:50:02.461 +02:00 [INF] SQLite database and tables created successfully
+2026-02-13 18:50:02.465 +02:00 [INF] Database initialization completed in 1619ms
+2026-02-13 18:50:02.471 +02:00 [INF] Database initialization completed successfully
+2026-02-13 18:50:02.660 +02:00 [INF] User profile is available. Using 'C:\Users\Eugene\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-13 18:50:02.927 +02:00 [INF] Now listening on: http://localhost:5021
+2026-02-13 18:50:02.938 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 18:50:02.941 +02:00 [INF] Hosting environment: Development
+2026-02-13 18:50:02.943 +02:00 [INF] Content root path: E:\TestTask\Bits OrchestraTest Task\ContactManager.Web
