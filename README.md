@@ -341,6 +341,7 @@ C4Container
     Rel(user, web_app, "Uses", "HTTPS")
     Rel(web_app, api, "Calls", "In-process")
     Rel(api, db, "Reads/Writes", "SQL/EF Core")
+```
 
 ### Level 3: Component Diagram
 
@@ -361,5 +362,4 @@ C4Component
     Rel(contacts_controller, csv_service, "Uses")
     Rel(contacts_controller, validator, "Uses")
     Rel(contact_service, db, "Reads/Writes", "EF Core")
-```
 ```
