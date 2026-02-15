@@ -14,7 +14,6 @@ namespace ContactManager.Web.Backend.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [ApiExplorerSettings(IgnoreApi = true)]
     public class ContactsApiController : ControllerBase
     {
         private readonly ContactBackendService _backendService;

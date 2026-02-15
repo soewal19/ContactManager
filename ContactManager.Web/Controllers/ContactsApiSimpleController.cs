@@ -29,24 +29,13 @@ namespace ContactManager.Web.Controllers
         }
 
         /// <summary>
-        /// Get contact by ID
-        /// </summary>
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Contact>> GetById(int id)
-        {
-            var contact = await _contactService.GetContactByIdAsync(id);
-            if (contact == null) return NotFound();
-            return Ok(contact);
-        }
-
-        /// <summary>
         /// Create new contact
         /// </summary>
         [HttpPost]
-        public async Task<ActionResult<Contact>> Create([FromBody] Contact contact)
+        public async Task<ActionResult> Create([FromBody] Contact contact)
         {
-            await _contactService.AddContactAsync(contact);
-            return CreatedAtAction(nameof(GetById), new { id = contact.Id }, contact);
+            await _contactService.AddContactsAsync(new[] { contact });
+            return Ok(new { success = true, message = "Contact created", id = contact.Id });
         }
 
         /// <summary>
@@ -57,7 +46,7 @@ namespace ContactManager.Web.Controllers
         {
             if (id != contact.Id) return BadRequest();
             await _contactService.UpdateContactAsync(contact);
-            return NoContent();
+            return Ok(new { success = true, message = "Contact updated" });
         }
 
         /// <summary>
@@ -67,7 +56,7 @@ namespace ContactManager.Web.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             await _contactService.DeleteContactAsync(id);
-            return NoContent();
+            return Ok(new { success = true, message = "Contact deleted" });
         }
     }
 }
